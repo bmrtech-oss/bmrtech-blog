@@ -12,8 +12,6 @@ eleventyNavigation:
 
 Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of experience leading **SaaS Product Development**, **AI innovation, advanced Identity and Access Management (IAM) integrations, and cloud transformation projects on Azure & AWS**. Proven leadership in designing secure, scalable product development, cloud infrastructures and implementing cutting-edge technologies. Deep expertise in developing and deploying machine learning solutions for business intelligence, predictive analytics, and automated workflows using Camunda Workflow Engine. Track record of designing and implementing enterprise-grade IAM frameworks, driving secure digital transformation through modern authentication standards, and architecting robust cloud-native solutions leveraging Azure and other major platforms. Proficient in languages like JavaScript, Python, Java, and C# with deep expertise in software development and Linux OS. Adept in deploying advanced AI models for business-critical applications, developing robust IAM systems, and driving digital transformation on Azure. Experienced in working with cross-functional teams to deliver innovative solutions aligned with organizational goals. Significant experience in data analysis and leveraging machine learning algorithms for practical business applications such as tax code prediction and geocoding. Experienced in implementing security protocols and identity and access management systems, including **Keycloak IAM**, and proficient in end-to-end API development using Django, .Net Core, and J2EE.
 
-\---
-
 **CORE COMPETENCIES**
 
 \- **Artificial Intelligence & Machine Learning**
@@ -26,7 +24,7 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 
 \- Python ML Ecosystem (scikit-learn, TensorFlow, PyTorch, pandas, NumPy, Matplotlib), WEKA, Data Engineering, ETL Pipelines.
 
-\- Amazon MTurk, Python-based content scraping frameworks, Hadoop.
+\- Amazon MTurk, Python-based content scraping frameworks, and Hadoop.
 
 \- **Identity & Access Management (IAM)**
 
@@ -75,8 +73,6 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 \- **Operating Systems**: Linux, Windows.
 
 \- **Data Analysis**: Skilled in data analysis.
-
-\---
 
 **SELECTED WORK EXPERIENCE**
 
@@ -190,8 +186,6 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 
 **Software Engineer — MAPS Infotech** (2005/07 – 2006/04)
 
-\---
-
 **EDUCATION**
 
 \- **B.E. in Computer Science & Engineering**
@@ -202,8 +196,6 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 
 \- Cusrow Wadia Institute of Technologies | 1999/05 – 2002/05
 
-\---
-
 **CERTIFICATIONS & TECHNICAL ACHIEVEMENTS**
 
 \- **Azure Architect Certification** (In-Progress/Recent)
@@ -213,8 +205,6 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 \- Lead Developer: **AI Tax Prediction & Geocoding APIs**; recognized for reducing operational analytics turnaround by 40%.
 
 \- Lead contributor to **AI tax code prediction systems** and secure IAM integrations for enterprise-scale platforms.
-
-\---
 
 **PUBLICATIONS, PROJECTS & RECOGNITION**
 
