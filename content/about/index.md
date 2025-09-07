@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+**Pramod M Rathod** 📧 [pramod2rathod@gmail.com](mailto:pramod2rathod@gmail.com) | 📞 +91 9561 412 416 | 🌐 [https://linkedin.com/in/pramodrathod](https://linkedin.com/in/pramodrathod)
