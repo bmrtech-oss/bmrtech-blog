@@ -86,8 +86,7 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 - Oversaw automated test suites and code review processes for secure, high-performance deployments.
 - Mentored engineers and led technical research in advanced analytics and Python-driven data science.
 - Led a team of 2-3 engineers in delivering features.
-
-\- Set up CI/CD using Jenkins and **Google Cloud Platform** tools.
+- Set up CI/CD using Jenkins and **Google Cloud Platform** tools.
 
 **Technical Lead — Avalara Technologies** (2014/05 – 2021/05)
 
@@ -140,5 +139,4 @@ Visionary **Senior Staff Engineer & Solutions Architect** with over 18 years of 
 - Principal investigator: **NLP chatbot and fraud detection AI deployments**; improved business KPIs significantly.
 - **Marketing Automation Platform** product for BrightEdge SEO, utilizing Python, Django, Celery, ReactJS, Redux, Google Cloud Platform services (Cloud Functions, Pub-Sub, Storage, Cloud SQL), and Auth0.
 - **EU VAT Engineering Projects**: SaaS VAT Reporting UI, HS Code Scraping & Classification, Tax Forms – Automation, Boundary Build (Tax Region Locator), One Mapping (Machine Learning – Tax Code Classifier).
-
-\- **Connectors Engineering Projects**: WooCommerce WordPress Plugin for TrustFile, Weebly Connector for TrustFile, Avalara TrustFile US.
+- **Connectors Engineering Projects**: WooCommerce WordPress Plugin for TrustFile, Weebly Connector for TrustFile, Avalara TrustFile US.
