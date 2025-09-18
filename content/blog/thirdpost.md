@@ -8,8 +8,6 @@ tags:
   - Teamwork
   - Engineering Culture
 ---
-\# From Blocker to Benefactor: Transforming Wait Time into Collaborative Wins
-
 We know the scene all too well. You’re cruising through your task, deep in the flow, when suddenly—nothing. A recent deployment from another team has introduced a bug that brings your work to a screeching halt. Your momentum evaporates.
 
 The standard playbook is familiar: file a ticket, send a polite-but-frustrated Slack message (“Hey, is anyone else seeing this?”), and enter **Wait Mode**. You context-switch to a lower-priority task or, worse, stare at the screen, your productivity draining away as you wait for a response.
