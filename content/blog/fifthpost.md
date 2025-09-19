@@ -2,8 +2,8 @@
 title: "A Case Study in Architectural Transition: When Intentions Don't Match
   Execution"
 description: " Lessons from a Distributed System to Monolith Consolidation"
-date: 2023-01-23
-draft: true
+date: 2025-09-19
+draft: false
 ---
 ## **Introduction**
 
