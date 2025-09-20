@@ -5,5 +5,5 @@ pages_build_output_dir = "_site"
 [[d1_databases]]
 binding = "BLOG_DB"
 database_name = "blog-db"
-database_id = "${DB_ID}"
+database_id = "{{DB_ID}}"
 
