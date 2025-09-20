@@ -2,3 +2,18 @@ _site/
 node_modules/
 package-lock.json
 .cache
+.env
+.DS_Store
+dist/
+.ELEVENTY_CACHE/
+# Secrets
+.env.local
+.env.production
+*.env
+# Wrangler generated files
+.wrangler/
+
+# Local testing files
+local-testing/local-test.db
+local-testing/*.log
+local-testing/test-data/

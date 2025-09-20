@@ -14,7 +14,18 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 
-{{ content | safe }}
+<div>
+	{{ content | safe }}
+</div>
+
+<!-- Add likes component -->
+{% include "likes.njk" %}
+
+<!-- Add comments component -->
+{% include "comments.njk" %}
+
+<!-- Add subscription management -->
+{% include "subscription.njk" %}
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 

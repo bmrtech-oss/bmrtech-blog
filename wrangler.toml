@@ -1,0 +1,14 @@
+name = "bmrtech-blog"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "_site"
+
+[[d1_databases]]
+binding = "BLOG_DB"
+database_name = "blog-db"
+database_id = "${DB_ID}"
+
+[env.production]
+name = "bmrtech-blog-production"
+
+[env.development]
+name = "bmrtech-blog-dev"
