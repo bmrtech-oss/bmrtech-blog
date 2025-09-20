@@ -7,8 +7,3 @@ binding = "BLOG_DB"
 database_name = "blog-db"
 database_id = "${DB_ID}"
 
-# [env.production]
-# name = "bmrtech-blog-production"
-
-# [env.preview]
-# name = "bmrtech-blog-preview"
