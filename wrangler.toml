@@ -7,8 +7,8 @@ binding = "BLOG_DB"
 database_name = "blog-db"
 database_id = "${DB_ID}"
 
-[env.production]
-name = "bmrtech-blog-production"
+# [env.production]
+# name = "bmrtech-blog-production"
 
-[env.development]
-name = "bmrtech-blog-dev"
+# [env.preview]
+# name = "bmrtech-blog-preview"
