@@ -3,12 +3,47 @@
 	"version": "8.0.0",
 	"description": "A starter repository for a blog web site using the Eleventy site generator.",
 	"scripts": {
+		"dev": "npx @11ty/eleventy --serve",
+		"dev:local": "npx @11ty/eleventy --serve",
+		"dev:cloudflare": "dotenv -- npx @11ty/eleventy --serve",
+		"dev:cloudflare:full": "npm run build:cloudflare && npx wrangler pages dev _site --local",
+		"dev:full": "npm run build:cloudflare && npx wrangler pages dev _site --local",
+		"dev:full2": "npm run api:server & npm run dev",
+		
 		"build": "npx @11ty/eleventy",
+		"build:local": "npx @11ty/eleventy",
+		"build:production": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+		"build:functions": "node scripts/build-functions.js",
+		"build:cloudflare": "dotenv -- npx @11ty/eleventy && npm run build:functions",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+		
+		"deploy": "dotenv -- npm run build:cloudflare && npx wrangler pages publish _site --project-name=bmrtech-blog --functions _worker.bundle",
+		
+		"clean": "rm -rf _site",
+		
+		"db:backup": "npx wrangler d1 export blog-db --output ./backups/backup-$(date +%Y%m%d-%H%M%S).sql",
+		"db:schema": "npx wrangler d1 execute blog-db --command=\".schema\"",
+		"db:check": "npx wrangler d1 execute blog-db --command=\"SELECT name FROM sqlite_master WHERE type='table';\"",
+		"db:migrate:safe": "npm run db:backup && npx wrangler d1 execute blog-db --file=schema.sql",
+		"db:migrate:dry-run": "npx wrangler d1 create blog-db-test && npx wrangler d1 execute blog-db-test --file=schema.sql && npx wrangler d1 execute blog-db-test --command=\".schema\"",
+		"db:seed": "npx wrangler d1 execute blog-db --file=seed-data.sql",
+		"db:reset": "npm run db:backup && npm run db:migrate:safe && npm run db:seed",
+		
+		"wrangler:login": "npx wrangler login",
+		"wrangler:dev": "dotenv -- npx wrangler pages dev _site --local",
+		
+		"test:db": "node local-testing/test-db.js",
+		"test:api": "node local-testing/test-api.js",
+		"api:server": "node local-testing/local-api-server.js",
+		
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+		
+		"lint": "echo 'No linter configured'",
+		"format": "echo 'No formatter configured'",
+		"audit": "npm audit"
 	},
 	"repository": {
 		"type": "git",
@@ -38,7 +73,14 @@
 		"@11ty/eleventy-plugin-bundle": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"@cloudflare/workers-types": "^4.20250921.0",
+		"dotenv-cli": "^10.0.0",
 		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^8.6.7"
+		"markdown-it-anchor": "^8.6.7",
+		"sqlite3": "^5.1.7",
+		"wrangler": "^4.38.0"
+	},
+	"dependencies": {
+		"dotenv": "^17.2.2"
 	}
 }

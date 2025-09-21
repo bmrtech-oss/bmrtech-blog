@@ -9,11 +9,11 @@
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-	  <link rel="icon" type="image/png" href="public/img/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="public/img/favicon.svg" />
-		<link rel="shortcut icon" href="public/img/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="public/img/apple-touch-icon.png" />
-		<link rel="manifest" href="public/img/site.webmanifest" />
+	  <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+		<link rel="shortcut icon" href="/img/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+		<link rel="manifest" href="/img/site.webmanifest" />
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -30,6 +30,7 @@
 		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
+		{%- css %}{% include "public/css/components.css" %}{% endcss %}
 		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
@@ -62,5 +63,11 @@
 		<footer></footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		<!-- Load JavaScript files -->
+		{# <script src="/js/comments.js"></script>
+		<script src="/js/likes.js"></script>
+		<script src="/js/subscription.js"></script> #}
+		<script src="/js/mock-api.js"></script>
+		<script src="/js/home-stats.js"></script>
 	</body>
 </html>

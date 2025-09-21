@@ -118,3 +118,43 @@ If your site enforces a [Content Security Policy](https://developer.mozilla.org/
 
 1. In `base.njk`, remove `<style>{% getBundle "css" %}</style>` and uncomment `<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">`
 2. Configure the server with the CSP directive `style-src: 'unsafe-inline'` (less secure).
+
+## Local Development with Docker (for Cloudflare Pages Functions)
+
+If you are on Rocky Linux 9, RHEL 9, or any system with glibc < 2.35, you may not be able to run Wrangler's local dev server due to a glibc version error. You can use Docker to run your project in a compatible environment:
+
+1. **Build the Docker image:**
+   ```sh
+   docker build -t bmrtech-blog-dev .
+   ```
+2. **Start a container:**
+   ```sh
+   docker run -it -p 8788:8788 -v $(pwd):/workspace bmrtech-blog-dev
+   ```
+3. **Inside the container:**
+   ```sh
+   npm run dev:full
+   ```
+
+This will let you build, run, and test your Cloudflare Pages Functions locally, even if your host system's glibc is too old.
+
+See also: `WORKERS-DEV-GUIDE.md` for more details.
+
+## Local Development with Podman (Alternative to Docker)
+
+If you prefer Podman, you can use the same workflow as Docker:
+
+1. **Build the image:**
+   ```sh
+   podman build -t bmrtech-blog-dev .
+   ```
+2. **Start a container:**
+   ```sh
+   podman run -it -p 8788:8788 -v $(pwd):/workspace bmrtech-blog-dev
+   ```
+3. **Inside the container:**
+   ```sh
+   npm run dev:full
+   ```
+
+Podman is a drop-in replacement for Docker and works with the same commands and syntax.

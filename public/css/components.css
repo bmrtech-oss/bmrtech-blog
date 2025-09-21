@@ -1,0 +1,411 @@
+/* Comments Component Styling - Simplified with CSS Variables */
+.comments {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color, #e5e7eb);
+}
+
+.comments h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color, #374151);
+    margin-bottom: 1.5rem;
+}
+
+.comments-list {
+    margin-bottom: 2rem;
+}
+
+.comment {
+    background: var(--card-bg, #f9fafb);
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.comment-header strong {
+    color: var(--text-color, #1f2937);
+    font-weight: 500;
+}
+
+.comment-date {
+    color: var(--text-muted, #6b7280);
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.comment p {
+    color: var(--text-color, #374151);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Simplified Comment Form */
+.comment-form {
+    background: var(--card-bg, #f8fafc);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: var(--text-color, #374151);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--input-border, #d1d5db);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: var(--input-bg, white);
+    color: var(--input-text, #1f2937);
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--focus-color, #3b82f6);
+    box-shadow: 0 0 0 3px var(--focus-shadow, rgba(59, 130, 246, 0.1));
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    color: var(--text-muted, #6b7280);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0;
+    accent-color: var(--accent-color, #3b82f6);
+}
+
+.checkbox-group label {
+    margin: 0;
+    font-weight: normal;
+    color: var(--text-color, #374151);
+    font-size: 0.95rem;
+}
+
+.comment-form button {
+    background: var(--button-bg, #3b82f6);
+    color: var(--button-text, white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.comment-form button:hover {
+    background: var(--button-hover, #2563eb);
+    transform: translateY(-1px);
+}
+
+.comment-form button:active {
+    transform: translateY(0);
+}
+
+.comment-form button:disabled {
+    background: var(--button-disabled-bg, #9ca3af);
+    color: var(--button-disabled-text, #6b7280);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Likes Component Styling */
+.likes {
+    margin: 2rem 0;
+}
+
+.like-btn {
+    background: var(--like-bg, #fef2f2);
+    color: var(--like-text, #dc2626);
+    border: 1px solid var(--like-border, #fecaca);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.like-btn:hover {
+    background: var(--like-hover-bg, #fee2e2);
+    border-color: var(--like-hover-border, #fca5a5);
+    transform: translateY(-1px);
+}
+
+.like-btn:active {
+    transform: translateY(0);
+}
+
+.like-btn:disabled {
+    background: var(--button-disabled-bg, #f3f4f6);
+    color: var(--button-disabled-text, #9ca3af);
+    border-color: var(--border-color, #e5e7eb);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.like-count {
+    background: var(--like-count-bg, #dc2626);
+    color: var(--like-count-text, white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Subscription Component Styling */
+.subscription-management {
+    background: var(--card-bg, #eff6ff);
+    border: 1px solid var(--border-color, #bfdbfe);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.subscription-management h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--heading-color, #1e40af);
+    margin-bottom: 1rem;
+}
+
+#subscription-status {
+    color: var(--text-color, #374151);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--input-bg, white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color, #e5e7eb);
+    font-size: 0.95rem;
+}
+
+.btn-secondary {
+    background: var(--secondary-button-bg, #6b7280);
+    color: var(--secondary-button-text, white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-button-hover, #4b5563);
+    transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+    transform: translateY(0);
+}
+
+/* CSS Variables for Theme Support */
+:root {
+    /* Light theme (default) */
+    --text-color: #374151;
+    --text-muted: #6b7280;
+    --bg-color: #ffffff;
+    --card-bg: #f9fafb;
+    --border-color: #e5e7eb;
+    --input-bg: #ffffff;
+    --input-text: #1f2937;
+    --input-border: #d1d5db;
+    --focus-color: #3b82f6;
+    --focus-shadow: rgba(59, 130, 246, 0.1);
+    --accent-color: #3b82f6;
+    --button-bg: #3b82f6;
+    --button-text: #ffffff;
+    --button-hover: #2563eb;
+    --button-disabled-bg: #9ca3af;
+    --button-disabled-text: #6b7280;
+    --like-bg: #fef2f2;
+    --like-text: #dc2626;
+    --like-border: #fecaca;
+    --like-hover-bg: #fee2e2;
+    --like-hover-border: #fca5a5;
+    --like-count-bg: #dc2626;
+    --like-count-text: #ffffff;
+    --secondary-button-bg: #6b7280;
+    --secondary-button-text: #ffffff;
+    --secondary-button-hover: #4b5563;
+    --heading-color: #1f2937;
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e5e7eb;
+        --text-muted: #9ca3af;
+        --bg-color: #111827;
+        --card-bg: #1f2937;
+        --border-color: #374151;
+        --input-bg: #374151;
+        --input-text: #f3f4f6;
+        --input-border: #4b5563;
+        --focus-color: #60a5fa;
+        --focus-shadow: rgba(96, 165, 250, 0.2);
+        --accent-color: #60a5fa;
+        --button-bg: #2563eb;
+        --button-text: #ffffff;
+        --button-hover: #1d4ed8;
+        --button-disabled-bg: #4b5563;
+        --button-disabled-text: #9ca3af;
+        --like-bg: #7f1d1d;
+        --like-text: #fecaca;
+        --like-border: #991b1b;
+        --like-hover-bg: #991b1b;
+        --like-hover-border: #7f1d1d;
+        --like-count-bg: #dc2626;
+        --like-count-text: #ffffff;
+        --secondary-button-bg: #4b5563;
+        --secondary-button-text: #e5e7eb;
+        --secondary-button-hover: #374151;
+        --heading-color: #f3f4f6;
+    }
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    z-index: 1000;
+    max-width: 320px;
+    font-size: 0.95rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .comments {
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+    }
+    
+    .comment-form {
+        padding: 1.25rem;
+    }
+    
+    .comment {
+        padding: 1rem;
+    }
+    
+    .comment-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .subscription-management {
+        padding: 1.25rem;
+    }
+    
+    .notification {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+    }
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #000000;
+        --input-border: #000000;
+        --focus-shadow: rgba(0, 0, 0, 0.3);
+    }
+    
+    .comment-form button,
+    .like-btn,
+    .btn-secondary {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .comment-form button,
+    .like-btn,
+    .btn-secondary {
+        transition: none;
+    }
+    
+    .loading-spinner {
+        animation: none;
+    }
+}

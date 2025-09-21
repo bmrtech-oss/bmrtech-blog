@@ -1,0 +1,54 @@
+### Test the API endpoint directly
+curl https://23134cb6.bmrtech-blog.pages.dev/api/likes/first-post
+
+# Should return something like: {"count": 0}
+
+### Test GET comments
+curl "https://23134cb6.bmrtech-blog.pages.dev/api/comments/first-post"
+
+### Test POST comment
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/comments/test-post" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Test User",
+    "email": "test@example.com",
+    "content": "This is a test comment via curl"
+  }'
+
+### Test with different slug
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/comments/another-post" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Another User",
+    "email": "another@example.com",
+    "content": "Another test comment"
+  }'
+
+
+### Test GET likes
+curl "https://23134cb6.bmrtech-blog.pages.dev/api/likes/first-post"
+
+### Test POST like
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/likes/test-post"
+
+### Test with different slug
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/likes/another-post"
+
+### Test subscribe
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/subscribe" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "test@example.com",
+    "action": "subscribe"
+  }'
+
+### Test unsubscribe
+curl -X POST "https://23134cb6.bmrtech-blog.pages.dev/api/subscribe" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "test@example.com",
+    "action": "unsubscribe"
+  }'
+
+### Test get author
+curl "https://23134cb6.bmrtech-blog.pages.dev/api/author/test@example.com"
