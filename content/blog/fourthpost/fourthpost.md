@@ -78,7 +78,7 @@ def fib(n):
     if n == 0:
         return 0
 
-    prev, curr = 0, 1 # This represents step 0 and step 1
+    prev, curr = 0, 1
 
     for i in range(2, n+1):
         prev, curr = curr, prev + curr
