@@ -9,6 +9,7 @@ tags:
   - Problem-Solving
   - Algorithms
 ---
+
 You've probably heard of Dynamic Programming (DP). It sounds intimidating, like something only geniuses at big tech companies understand. But what if I told you the core idea is something you already use every day? It’s the ultimate strategy for working smarter, not harder.
 
 > "**The biggest challenge in software development is to avoid complexity.**" - **John Carmack**
@@ -31,11 +32,40 @@ A naive recursive solution would plunge headfirst into this recurrence, leading 
 
 This is where DP’s magic comes in. We simply remember the answer to each sub-problem the first time we solve it. This technique is called **memoization** (yes, like "writing a memo," not "memorization").
 
+```mermaid
+flowchart TD
+    F5["F(5)"]
+    F5 --> F4["F(4)"]
+    F5 --> F3["F(3)"]
+    
+    F4 --> F3a["F(3)"]
+    F4 --> F2a["F(2)"]
+    
+    F3 --> F2b["F(2)"]
+    F3 --> F1a["F(1)"]
+    
+    F3a --> F2c["F(2)"]
+    F3a --> F1b["F(1)"]
+    
+    F2a --> F1c["F(1)"]
+    F2a --> F0a["F(0)"]
+    
+    F2b --> F1d["F(1)"]
+    F2b --> F0b["F(0)"]
+    
+    F2c --> F1e["F(1)"]
+    F2c --> F0c["F(0)"]
+
+    style F2a fill:#ececec
+    style F2b fill:#ececec
+    style F2c fill:#ececec
+```
+
 ## The Two Flavors of DP
 
 There are two main ways to implement this "remembering" strategy.
 
-### 1\. Top-Down: The "Lazy" Recursive Approach
+### 1. Top-Down: The "Lazy" Recursive Approach
 
 This is recursion plus a memory. You start with your big problem and work down to the base cases, but you cache every result.
 
@@ -45,11 +75,14 @@ This is recursion plus a memory. You start with your big problem and work down t
 **Python Code (Top-Down Fibonacci):**
 
 ```python
-memo = {} # Our notebook to remember answers
+
+# Our notebook to remember answers
+memo = {} 
 
 def fib(n):
     if n in memo:
-        return memo[n]  # 1. Check the notebook first!
+				# 1. Check the notebook first!
+        return memo[n]
  
     if n <= 1:
         return n
@@ -57,6 +90,7 @@ def fib(n):
     # 2. If not found, calculate and SAVE in notebook
     memo[n] = fib(n-1) + fib(n-2)
     return memo[n]
+
 ```
 
 ### 2\. Bottom-Up: The "Proactive" Iterative Approach
@@ -69,6 +103,7 @@ This approach is all about order. Instead of starting from the top and recursing
 **Python Code (Bottom-Up Fibonacci):**
 
 ```python
+
 def fib(n):
     if n == 0:
         return 0
@@ -81,6 +116,7 @@ def fib(n):
         prev, curr = curr, prev + curr
 
     return curr
+
 ```
 
 _This version is ultra-efficient, using constant_ `O(1)` _space because it only needs to remember the last two steps, not the whole table._
