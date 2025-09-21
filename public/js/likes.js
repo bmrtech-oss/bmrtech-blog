@@ -2,6 +2,7 @@ class LikesManager {
   constructor(slug) {
     this.slug = slug;
     this.API_BASE = '/api';
+    console.log('LikesManager initialized with slug:', slug); 
     this.likedKey = `liked_${slug}`;
   }
 
@@ -12,7 +13,10 @@ class LikesManager {
 
   async loadLikes() {
     try {
-      const response = await fetch(`${this.API_BASE}/likes/${this.slug}`);
+      // ✅ CORRECT: Ensure we have a slug and no trailing slash
+      const url = `${this.API_BASE}/likes/${this.slug}`;
+      console.log('Loading likes from:', url);
+      const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to load likes');
       const data = await response.json();
       this.updateDisplay(data.count);

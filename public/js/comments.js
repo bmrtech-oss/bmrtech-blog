@@ -6,14 +6,16 @@ class CommentsManager {
 
   async loadComments() {
     try {
-      const response = await fetch(`${this.API_BASE}/comments/${this.slug}`);
-      if (!response.ok) throw new Error('Failed to load comments');
-      const comments = await response.json();
-      this.renderComments(comments);
+        // ✅ CORRECT: Ensure proper URL format
+        const url = `${this.API_BASE}/comments/${this.slug}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Failed to load comments');
+        const comments = await response.json();
+        this.renderComments(comments);
     } catch (error) {
-      this.showError('Error loading comments. Please refresh the page.');
+        console.error('Error loading comments:', error);
     }
-  }
+}
 
   renderComments(comments) {
     const container = document.getElementById('comments-container');

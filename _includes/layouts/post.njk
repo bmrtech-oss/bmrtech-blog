@@ -18,6 +18,8 @@ layout: layouts/base.njk
 	{{ content | safe }}
 </div>
 
+{# Set slug for likes/comments components #}
+{% set slug = page.fileSlug %}
 <!-- Add likes component -->
 {% include "likes.njk" %}
 
