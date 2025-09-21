@@ -32,34 +32,6 @@ A naive recursive solution would plunge headfirst into this recurrence, leading 
 
 This is where DP’s magic comes in. We simply remember the answer to each sub-problem the first time we solve it. This technique is called **memoization** (yes, like "writing a memo," not "memorization").
 
-```mermaid
-flowchart TD
-    F5["F(5)"]
-    F5 --> F4["F(4)"]
-    F5 --> F3["F(3)"]
-    
-    F4 --> F3a["F(3)"]
-    F4 --> F2a["F(2)"]
-    
-    F3 --> F2b["F(2)"]
-    F3 --> F1a["F(1)"]
-    
-    F3a --> F2c["F(2)"]
-    F3a --> F1b["F(1)"]
-    
-    F2a --> F1c["F(1)"]
-    F2a --> F0a["F(0)"]
-    
-    F2b --> F1d["F(1)"]
-    F2b --> F0b["F(0)"]
-    
-    F2c --> F1e["F(1)"]
-    F2c --> F0c["F(0)"]
-
-    style F2a fill:#ececec
-    style F2b fill:#ececec
-    style F2c fill:#ececec
-```
 
 ## The Two Flavors of DP
 
@@ -76,18 +48,15 @@ This is recursion plus a memory. You start with your big problem and work down t
 
 ```python
 
-# Our notebook to remember answers
 memo = {} 
 
 def fib(n):
     if n in memo:
-				# 1. Check the notebook first!
         return memo[n]
  
     if n <= 1:
         return n
 
-    # 2. If not found, calculate and SAVE in notebook
     memo[n] = fib(n-1) + fib(n-2)
     return memo[n]
 
@@ -108,11 +77,9 @@ def fib(n):
     if n == 0:
         return 0
 
-    # We only need to remember the last two results at any time
     prev, curr = 0, 1 # This represents step 0 and step 1
 
     for i in range(2, n+1):
-        # The new 'current' is the sum of the two previous ones
         prev, curr = curr, prev + curr
 
     return curr
