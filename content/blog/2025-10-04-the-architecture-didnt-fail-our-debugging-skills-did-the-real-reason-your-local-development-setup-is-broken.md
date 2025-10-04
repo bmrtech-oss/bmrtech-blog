@@ -29,7 +29,7 @@ It brings to mind the famous words of **Edsger W. Dijkstra**: _"If debugging is 
 
 What happened?
 
-\#### **The Real Culprit: A Debugging Deficit**
+## **The Real Culprit: A Debugging Deficit**
 
 We blamed the architecture, but the architecture was just a scapegoat. The real failure was a critical gap in a fundamental engineering skill: **systematic debugging.**
 
@@ -53,7 +53,7 @@ Let's break down what effective debugging would have looked like in that initial
 
 This methodical approach is what separates good engineers from great ones. As the legendary **Brian Kernighan** put it: _"The most effective debugging tool is still careful thought, coupled with judiciously placed print statements."_ The team had the tools; what was missing was the "careful thought" to wield them effectively.
 
-\#### **The Monolith is a Red Herring**
+## **The Monolith is a Red Herring**
 
 The decision to move to a monolith was a strategic misdirection. It didn't address the root cause; it merely simplified the _symptoms_ by reducing the number of moving parts. It traded one set of problems (orchestrating distributed systems) for another (tight coupling, deployment bottlenecks, and tangled code).
 
@@ -61,7 +61,7 @@ The tragedy is that the core skill gap remained. When the next critical bug appe
 
 This reminds me of a brilliant insight from **Andrew Hunt and David Thomas in _The Pragmatic Programmer_**: _"Don't live with broken windows. Fix bad designs, wrong decisions, and poor code when you see them."_ The team saw a broken window (the failed setup) and instead of fixing the pane, they condemned the entire building and built a new one with the same faulty blueprint.
 
-\#### **Cultivating a Culture of Debugging**
+## **Cultivating a Culture of Debugging**
 
 This story isn't about blaming the new engineers. It's about a failure of engineering culture. We often prioritize shipping features over cultivating foundational skills. We must change that.
 
@@ -75,7 +75,7 @@ Here’s how:
 
 \* **Empower with Tools:** Invest in robust, well-documented local development environments. But more importantly, teach everyone how to maintain and fix them.
 
-**Conclusion**
+## **Conclusion**
 
 **Leslie Lamport** once said, _"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable."_ The new team experienced this firsthand. But the solution wasn't to eliminate distribution; it was to learn how to discover that "computer you didn't know existed."
 
