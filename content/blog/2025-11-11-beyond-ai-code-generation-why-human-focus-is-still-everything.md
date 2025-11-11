@@ -54,7 +54,7 @@ This approach treats coding like factory work, but it's not. It's a craft. Fred 
 
 You can't command someone's imagination. You can't micromanage a castle into existence.
 
-\#### The New Illusion: "AI Will Figure It Out"
+### The New Illusion: "AI Will Figure It Out"
 
 There's a new, seductive voice adding to this noise today. It’s the idea that with the advent of powerful AI coding assistants, the deep dive isn't necessary anymore. The thinking goes: "Why get lost in the details? The AI can generate the code. Why worry about edge cases? The AI can find them."
 
