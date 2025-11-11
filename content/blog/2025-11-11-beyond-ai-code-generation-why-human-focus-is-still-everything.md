@@ -78,7 +78,7 @@ I can hear the objection already. "This is an old problem," you might say. "We'r
 
 This is a fantastic goal, and MCPs are a genuine step forward. But let's be clear about what they do.
 
-## **MCPs provide _information_; they do not provide _understanding_.**
+### **MCPs provide _information_; they do not provide _understanding_.**
 
 Think of it like this: you can give a junior developer complete access to the company wiki, the code repository, and every design document ever written. This is undeniably powerful. But if you then ask them to design the core architecture for a new, high-stakes payment system, what happens?
 
