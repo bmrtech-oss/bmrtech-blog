@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Bunty Rathod's Life & Tech Blog",
+	title: "Antinode Labs",
 	url: "https://bmrtech-blog.pages.dev/",
 	language: "en",
 	description: "I am writing about my experiences as a computer engineer and lifelong learner.",
