@@ -2,7 +2,7 @@ module.exports = {
 	title: "Antinode Labs",
 	url: "https://antinodelabs.com/",
 	language: "en",
-	description: "I am writing about my experiences as a computer engineer and lifelong learner.",
+	description: "Engineering Beyond Peak. Don't just reach maximum amplitude, engineer what comes after.",
 	author: {
 		name: "Antinode Labs",
 		email: "info@antinodelabs.con",
