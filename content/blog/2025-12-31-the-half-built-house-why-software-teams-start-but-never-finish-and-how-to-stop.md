@@ -10,8 +10,6 @@ tags:
   - engineering execution
   - how to finish what you start
 ---
-#   
-
 * * *
 
 You know the one.
@@ -31,8 +29,6 @@ That “Unified Service Mesh” project? That’s your half-built room. The “S
 When was the last time you felt the pure, uncomplicated satisfaction of **finishing** something? Of handing it to someone and saying, “Here, this is yours. It works. Go be amazing.”
 
 If that feeling is a distant memory, you’re not alone. But you’re also not doomed.
-
-\---
 
 ## **Two Scenes From the Trenches**
 
@@ -68,8 +64,6 @@ Now, the platform team owns a half-finished “official” project _and_ a shado
 
 \> **Has perfect become the enemy of good? Of finished? Of _helpful_?**
 
-\---
-
 ## **The Real Cost Isn't in Your Sprint Board. It's in Your People's Eyes.**
 
 This isn’t about velocity points. It’s about morale. It’s about trust.
@@ -77,8 +71,6 @@ This isn’t about velocity points. It’s about morale. It’s about trust.
 Every unfinished masterpiece chips away at your team’s confidence. It breeds cynicism. “Why start? We never finish.” It erodes trust with the developers you serve. Their polite smiles become masks for quiet resentment. They’ll work around you. Not because they’re difficult, but because they have jobs to do.
 
 **You can feel it, can’t you?** The heaviness in stand-up. The deflation at retro. The brilliant engineer who’s started to quiet-quit because their craftsmanship is lost in endless cycles of prep work.
-
-\---
 
 ## **The Way Out: Less Symphony, More Songwriting**
 
@@ -116,8 +108,6 @@ This is the hardest but most liberating skill. You must **consciously, strategic
 
 When the “what about…” question arises, smile and say: **“Great question. That’s for version 2. For now, we’re just solving X.”**
 
-\---
-
 ## **Your First Step Doesn't Go on a Roadmap.**
 
 It goes on a sticky note.
@@ -135,8 +125,6 @@ That feeling—the sigh of relief, the high-five, the “thank you” in Slack�
 **One finished, useful, small thing at a time.**
 
 The house gets built one secure, livable room at a time. Start with one. Turn the light on. Invite someone in. You’ve got this.
-
-\---
 
 ## **The Bottom Line**
 
