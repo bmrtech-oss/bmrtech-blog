@@ -14,7 +14,7 @@ tags:
 
 You know the one.
 
-You started with such vision. “This will be the perfect office!” You ripped up the carpet, exposed the beautiful hardwood. You mounted gorgeous shelves. You ran Ethernet for lightning speed.
+You started with such a vision. “This will be the perfect office!” You ripped up the carpet, exposing the beautiful hardwood. You mounted gorgeous shelves. You ran Ethernet for lightning speed.
 
 But then… life. The trim isn’t painted. The closet door is off its track. There’s a stack of boxes in the corner that never got unpacked. The room _works_, sort of. You can go in there. But it doesn’t feel finished. It feels like a monument to good intentions and stalled momentum.
 
@@ -22,7 +22,7 @@ Every time you walk past, it whispers: _“You didn’t finish.”_
 
 Now, look at your platform roadmap.
 
-That “Unified Service Mesh” project? That’s your half-built room. The “Self-Service Deployment Portal” that’s 80% done? Another one. You have a whole house of these spaces. Your team is exhausted, living on a construction site. And your internal developers—the people waiting to use these rooms—are politely coughing in the dust, asking, “Is it ready yet?”
+That “Unified Service Mesh” project? That’s your half-built room. Is the “Self-Service Deployment Portal” that’s 80% done? Another one. You have a whole house of these spaces. Your team is exhausted, living on a construction site. And your internal developers—the people waiting to use these rooms—are politely coughing in the dust, asking, “Is it ready yet?”
 
 **Let’s get brutally honest for a second.**
 
@@ -70,7 +70,7 @@ This isn’t about velocity points. It’s about morale. It’s about trust.
 
 Every unfinished masterpiece chips away at your team’s confidence. It breeds cynicism. “Why start? We never finish.” It erodes trust with the developers you serve. Their polite smiles become masks for quiet resentment. They’ll work around you. Not because they’re difficult, but because they have jobs to do.
 
-**You can feel it, can’t you?** The heaviness in stand-up. The deflation at retro. The brilliant engineer who’s started to quiet-quit because their craftsmanship is lost in endless cycles of prep work.
+**You can feel it, can’t you?** The heaviness in stand-up. The deflation at retro. The brilliant engineer who has started to quiet-quit because their craftsmanship is lost in endless cycles of prep work.
 
 ## **The Way Out: Less Symphony, More Songwriting**
 
@@ -82,7 +82,7 @@ You don’t climb a mountain in one leap. You take a step. Then another. You nee
 
 Forget the quarter. Forget the sprint. Ask one question every Friday: **“What is one, specific, small pain someone will feel on Monday morning that we can eliminate by Friday afternoon?”**
 
-Is it the 15-minute manual approval for a database schema change? Write a script to auto-approve low-risk ones. Is it confusing docs? Rewrite one page. Ship the fix. Announce it: “We made your Monday morning a little better.” That feeling is fuel.
+Is it the 15-minute manual approval for a database schema change? Write a script to auto-approve low-risk ones. Is it confusing the docs? Rewrite one page. Ship the fix. Announce it: “We made your Monday morning a little better.” That feeling is fuel.
 
 ### **2\. Become a Painkiller, Not a Vitamin.**
 
@@ -104,7 +104,7 @@ Launch it. Watch it fly. Celebrate that. Then iterate.
 
 ### **4\. Practice "Creative Neglect."**
 
-This is the hardest but most liberating skill. You must **consciously, strategically decide what NOT to do right now.** Write it down. Put it on a “Later” list. Give yourself permission to neglect the future perfect for the present good.
+This is the hardest but most liberating skill. You must **consciously, strategically decide what NOT to do right now.** Write it down. Put it on a “Later” list. Permit yourself to neglect the future perfect for the present good.
 
 When the “what about…” question arises, smile and say: **“Great question. That’s for version 2. For now, we’re just solving X.”**
 
