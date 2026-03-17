@@ -2,7 +2,7 @@
 title: "Beyond the Code: Six Timeless Principles for Building Software That Matters"
 description: Six Timeless Principles for Building Software That Matters
 date: 2026-03-07
-draft: true
+draft: false
 tags:
   - Software Principles
   - Product Development
