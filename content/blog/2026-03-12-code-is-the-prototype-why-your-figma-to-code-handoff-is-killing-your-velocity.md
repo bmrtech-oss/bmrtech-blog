@@ -55,19 +55,27 @@ This isn’t an isolated story. It’s the standard operating procedure at thous
 
 | **Total** | **134** |
 
-```html
 <div class="table-wrapper">
+
   <table>
+
     <thead>
+
       <tr><th>Metric</th><th>Traditional</th><th>Code‑Native</th><th>Improvement</th></tr>
+
     </thead>
+
     <tbody>
+
       <tr><td>Design‑to‑code cycle</td><td>2‑3 weeks</td><td>3‑5 days</td><td>70% faster</td></tr>
+
       <tr><td>Design drift tickets</td><td>5‑10/sprint</td><td>0‑2/sprint</td><td>80% reduction</td></tr>
+
     </tbody>
+
   </table>
+
 </div>
-```
 
 Now multiply by 50 features per year. That’s **6,700 engineering hours**—nearly **four full‑time engineers**—spent on translation work that adds zero customer value.
 
