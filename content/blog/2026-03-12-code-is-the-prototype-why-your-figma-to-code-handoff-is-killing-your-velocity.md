@@ -39,37 +39,33 @@ Let’s trace a typical feature through your organization:
 
 This isn’t an isolated story. It’s the standard operating procedure at thousands of organizations.
 
-| Header 1 | Header 2 | Header 3 |
-
-|------------|------------|------------|
-
-| Row 1, Col1 | Row 1, Col2 | Row 1, Col3 |
-
-| Row 2, Col1 | Row 2, Col2 | Row 2, Col3 |
-
 &nbsp;
-
-| Left aligned | Center aligned | Right aligned |
-
-|:-------------|:--------------:|--------------:|
-
-| text | text | text |
 
 ### The Math
 
-| Activity per Feature | Time (Hours) |
+<div class="stats-grid">
 
-|---------------------|--------------|
+  <div><strong>Design in Figma</strong></div><div>40 hours</div>
 
-| Design in Figma | 40 |
+  <div><strong>Handoff meetings</strong></div><div>6 hours</div>
 
-| Handoff meetings | 6 |
+  <div><strong>Implementation</strong></div><div>80 hours</div>
 
-| Implementation | 80 |
+  <div><strong>Design QA</strong></div><div>8 hours</div>
 
-| Design QA | 8 |
+  <div class="total"><strong>Total</strong></div><div class="total"><strong>134 hours</strong></div>
 
-| **Total** | **134** |
+</div>
+
+- **Design in Figma** – 40 hours  
+
+- **Handoff meetings** – 6 hours  
+
+- **Implementation** – 80 hours  
+
+- **Design QA** – 8 hours  
+
+- **Total** – **134 hours**
 
 Now multiply by 50 features per year. That’s **6,700 engineering hours**—nearly **four full‑time engineers**—spent on translation work that adds zero customer value.
 
