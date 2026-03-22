@@ -2,7 +2,6 @@ require('dotenv').config();
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownIt = require("markdown-it");
-const markdownItTable = require("markdown-it-table");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -28,7 +27,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
 	// Add table support
-	const md = markdownIt({ html: true }).use(markdownItTable);
+	const md = markdownIt({ html: true });
   eleventyConfig.setLibrary("md", md);
 
 	// App plugins
