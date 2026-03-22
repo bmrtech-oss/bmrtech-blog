@@ -57,16 +57,6 @@ This isn’t an isolated story. It’s the standard operating procedure at thous
 
 </div>
 
-- **Design in Figma** – 40 hours  
-
-- **Handoff meetings** – 6 hours  
-
-- **Implementation** – 80 hours  
-
-- **Design QA** – 8 hours  
-
-- **Total** – **134 hours**
-
 Now multiply by 50 features per year. That’s **6,700 engineering hours**—nearly **four full‑time engineers**—spent on translation work that adds zero customer value.
 
 ## The Two Design Systems Problem
@@ -91,7 +81,7 @@ What if your teams built features directly in code from day one?
 
 Here’s how it works:
 
-**Day 1:** Engineer creates a new route behind a feature flag. AI coding assistant generates the initial component structure using your existing design system.
+**Day 1:** The engineer creates a new route behind a feature flag. AI coding assistant generates the initial component structure using your existing design system.
 
 **Day 2:** Mock data populates the interface. The feature is functional—not just visual. Stakeholders interact with a real prototype via a preview URL.
 
