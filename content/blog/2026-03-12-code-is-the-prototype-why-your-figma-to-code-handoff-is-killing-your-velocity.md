@@ -5,7 +5,7 @@ description: Why the traditional Figma‑to‑code handoff is costing you 40% of
   engineering velocity and how code‑native prototyping with AI can help you ship
   features in half the time
 date: 2026-03-12
-draft: true
+draft: false
 tags:
   - Code‑native prototyping
   - Figma to code handoff
