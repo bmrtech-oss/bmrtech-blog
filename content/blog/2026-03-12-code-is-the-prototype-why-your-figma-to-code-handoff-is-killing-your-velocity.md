@@ -39,6 +39,12 @@ Let’s trace a typical feature through your organization:
 
 This isn’t an isolated story. It’s the standard operating procedure at thousands of organizations.
 
+| Left aligned | Center aligned | Right aligned |
+
+|:-------------|:--------------:|--------------:|
+
+| text | text | text |
+
 ### The Math
 
 | Activity per Feature | Time (Hours) |
