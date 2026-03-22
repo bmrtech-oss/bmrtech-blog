@@ -55,8 +55,6 @@ This isn’t an isolated story. It’s the standard operating procedure at thous
 
 | **Total** | **134** |
 
-&nbsp;
-
 Now multiply by 50 features per year. That’s **6,700 engineering hours**—nearly **four full‑time engineers**—spent on translation work that adds zero customer value.
 
 ## The Two Design Systems Problem
