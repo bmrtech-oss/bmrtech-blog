@@ -39,6 +39,16 @@ Let’s trace a typical feature through your organization:
 
 This isn’t an isolated story. It’s the standard operating procedure at thousands of organizations.
 
+| Header 1 | Header 2 | Header 3 |
+
+|------------|------------|------------|
+
+| Row 1, Col1 | Row 1, Col2 | Row 1, Col3 |
+
+| Row 2, Col1 | Row 2, Col2 | Row 2, Col3 |
+
+&nbsp;
+
 | Left aligned | Center aligned | Right aligned |
 
 |:-------------|:--------------:|--------------:|
