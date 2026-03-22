@@ -68,6 +68,45 @@ body {
   font-weight: bold;
 }
 
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.comparison-grid > div {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison-grid .grid-header {
+  font-weight: 700;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Responsive: on narrow screens, let the grid scroll horizontally */
+@media (max-width: 640px) {
+  .comparison-grid {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .comparison-grid > div {
+    display: inline-block;
+    width: 150px;
+    white-space: normal;
+    vertical-align: top;
+  }
+  .comparison-grid .grid-header {
+    display: inline-block;
+  }
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
