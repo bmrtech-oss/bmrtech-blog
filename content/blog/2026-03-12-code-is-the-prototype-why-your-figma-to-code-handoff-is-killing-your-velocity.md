@@ -103,19 +103,57 @@ Here’s how it works:
 
 ### The Results
 
-| Metric | Traditional | Code‑Native | Improvement |
+<div class="comparison-grid">
 
-|--------|------------|-------------|-------------|
+  <div class="grid-header">Metric</div>
 
-| Design‑to‑code cycle | 2‑3 weeks | 3‑5 days | **70% faster** |
+  <div class="grid-header">Traditional</div>
 
-| Design drift tickets | 5‑10 per sprint | 0‑2 per sprint | **80% reduction** |
+  <div class="grid-header">Code‑Native</div>
 
-| Handoff meetings | 3‑4 per feature | 0‑1 per feature | **75% fewer** |
+  <div class="grid-header">Improvement</div>
 
-| QA cycles | 2‑3 per feature | 1 per feature | **50% faster** |
+  <div><strong>Design‑to‑code cycle</strong></div>
 
-| Developer satisfaction | 6.2/10 | 8.7/10 | **40% increase** |
+  <div>2‑3 weeks</div>
+
+  <div>3‑5 days</div>
+
+  <div><strong>70% faster</strong></div>
+
+  <div><strong>Design drift tickets</strong></div>
+
+  <div>5‑10 per sprint</div>
+
+  <div>0‑2 per sprint</div>
+
+  <div><strong>80% reduction</strong></div>
+
+  <div><strong>Handoff meetings</strong></div>
+
+  <div>3‑4 per feature</div>
+
+  <div>0‑1 per feature</div>
+
+  <div><strong>75% fewer</strong></div>
+
+  <div><strong>QA cycles</strong></div>
+
+  <div>2‑3 per feature</div>
+
+  <div>1 per feature</div>
+
+  <div><strong>50% faster</strong></div>
+
+  <div><strong>Developer satisfaction</strong></div>
+
+  <div>6.2/10</div>
+
+  <div>8.7/10</div>
+
+  <div><strong>40% increase</strong></div>
+
+</div>
 
 ## The Technology Enablers
 
@@ -123,7 +161,7 @@ This isn’t theoretical. The tools exist today:
 
 ### 1. Feature Flags
 
-Every new feature lives behind a flag. Development happens in production code, invisible to users until ready.
+Every new feature lives behind a flag. Development occurs in production code, which remains invisible to users until it is ready.
 
 ### 2. AI Coding Agents
 
@@ -250,7 +288,7 @@ Implementing this shift requires three things:
 
 - Train all teams on the new workflow.
 - Automate governance (ESLint rules, CI checks, visual regression).
-- Establish design system council for component governance.
+- Establish a design system council for component governance.
 - Retire the “design handoff” from your process vocabulary.
 
 ## The Risk of Inaction
@@ -324,7 +362,7 @@ Stripe’s dashboard team uses feature flags and mock data layers to build fully
 
 ### Linear: Code‑First, No Mockups
 
-Linear’s co‑founder and designer Karri Saarinen has spoken publicly about their philosophy.
+Linear’s co-founder and designer, Karri Saarinen, has spoken publicly about their philosophy.
 
 - **Key practice:** Designers learn basic React to prototype directly in the codebase. The component library is so robust that building in code is faster than building in Figma.
 - **Sources:** Public interviews and Karri Saarinen’s writings (various, 2022–2025)
@@ -344,7 +382,3 @@ The 40% velocity tax figure and metrics in this brief are synthesized from:
 - Internal workflow analyses from early adopters of code‑native prototyping
 
 For organizations interested in running their own pilot, the metrics in this brief serve as baselines—your actual improvements may vary, but the direction of change is consistent across every team that has made this shift.
-
-*Ready to start your pilot? [Download the implementation playbook →]*
-
-*Questions about your specific stack? [Contact us →]*
