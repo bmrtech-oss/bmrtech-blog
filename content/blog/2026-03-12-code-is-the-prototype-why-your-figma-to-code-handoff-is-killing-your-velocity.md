@@ -93,55 +93,91 @@ Here’s how it works:
 
 ### The Results
 
-<div class="comparison-grid">
+<div class="table-wrapper">
 
-  <div class="grid-header">Metric</div>
+  <table class="comparison-table">
 
-  <div class="grid-header">Traditional</div>
+    <thead>
 
-  <div class="grid-header">Code‑Native</div>
+      <tr>
 
-  <div class="grid-header">Improvement</div>
+        <th>Metric</th>
 
-  <div><strong>Design‑to‑code cycle</strong></div>
+        <th>Traditional</th>
 
-  <div>2‑3 weeks</div>
+        <th>Code‑Native</th>
 
-  <div>3‑5 days</div>
+        <th>Improvement</th>
 
-  <div><strong>70% faster</strong></div>
+      </tr>
 
-  <div><strong>Design drift tickets</strong></div>
+    </thead>
 
-  <div>5‑10 per sprint</div>
+    <tbody>
 
-  <div>0‑2 per sprint</div>
+      <tr>
 
-  <div><strong>80% reduction</strong></div>
+        <td><strong>Design‑to‑code cycle</strong></td>
 
-  <div><strong>Handoff meetings</strong></div>
+        <td>2‑3 weeks</td>
 
-  <div>3‑4 per feature</div>
+        <td>3‑5 days</td>
 
-  <div>0‑1 per feature</div>
+        <td><strong>70% faster</strong></td>
 
-  <div><strong>75% fewer</strong></div>
+      </tr>
 
-  <div><strong>QA cycles</strong></div>
+      <tr>
 
-  <div>2‑3 per feature</div>
+        <td><strong>Design drift tickets</strong></td>
 
-  <div>1 per feature</div>
+        <td>5‑10 per sprint</td>
 
-  <div><strong>50% faster</strong></div>
+        <td>0‑2 per sprint</td>
 
-  <div><strong>Developer satisfaction</strong></div>
+        <td><strong>80% reduction</strong></td>
 
-  <div>6.2/10</div>
+      </tr>
 
-  <div>8.7/10</div>
+      <tr>
 
-  <div><strong>40% increase</strong></div>
+        <td><strong>Handoff meetings</strong></td>
+
+        <td>3‑4 per feature</td>
+
+        <td>0‑1 per feature</td>
+
+        <td><strong>75% fewer</strong></td>
+
+      </tr>
+
+      <tr>
+
+        <td><strong>QA cycles</strong></td>
+
+        <td>2‑3 per feature</td>
+
+        <td>1 per feature</td>
+
+        <td><strong>50% faster</strong></td>
+
+      </tr>
+
+      <tr>
+
+        <td><strong>Developer satisfaction</strong></td>
+
+        <td>6.2/10</td>
+
+        <td>8.7/10</td>
+
+        <td><strong>40% increase</strong></td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
 
 </div>
 
