@@ -17,49 +17,87 @@ Here is the rating of ChatGPT, Copilot, Cursor, and Claude Code against a "5 Lev
 
 First, we need a common language. Drawing from automotive autonomy levels, several frameworks have emerged. The most practical for our purposes comes from Dan Shapiro (and echoed by Simon Willison) :
 
-```
 <table>
+
   <thead>
+
     <tr>
+
       <th>Level</th>
+
       <th>Name</th>
+
       <th>Description</th>
+
     </tr>
+
   </thead>
+
   <tbody>
+
     <tr>
+
       <td><strong>Level 0</strong></td>
+
       <td>Spicy Autocomplete</td>
+
       <td>AI suggests the next line or snippet; you review everything</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Level 1</strong></td>
+
       <td>Coding Intern</td>
+
       <td>AI writes small, unimportant snippets with full human review</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Level 2</strong></td>
+
       <td>Junior Developer</td>
+
       <td>Pair programming—AI generates code, you review every line</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Level 3</strong></td>
+
       <td>Developer</td>
+
       <td>Most code is AI-generated; you're a full-time code reviewer</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Level 4</strong></td>
+
       <td>Engineering Team</td>
+
       <td>AI agents handle entire features; you're the product manager</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Level 5</strong></td>
+
       <td>Dark Factory</td>
+
       <td>Lights-out development—AI builds from specs, no human code review</td>
+
     </tr>
+
   </tbody>
+
 </table>
-```
 
 This framework is useful because it separates **capability** from **trust**. A tool might be capable of Level 4 work, but you might only trust it at Level 2 for certain tasks.
 
@@ -206,68 +244,125 @@ This optimizes "intelligence-per-dollar" while maintaining quality.
 
 Based on verified benchmarks and user reports :
 
-```
 <table>
+
   <thead>
+
     <tr>
+
       <th>Tool</th>
+
       <th>Autonomy Level</th>
+
       <th>Multi-File Refactor</th>
+
       <th>Large Codebase</th>
+
       <th>Speed</th>
+
       <th>Cost/Month</th>
+
       <th>Best For</th>
+
     </tr>
+
   </thead>
+
   <tbody>
+
     <tr>
+
       <td><strong>GitHub Copilot</strong></td>
+
       <td>0–1</td>
+
       <td>45-55%</td>
+
       <td>40%</td>
+
       <td>Fast</td>
+
       <td>$10-39</td>
+
       <td>Boilerplate, autocomplete</td>
+
     </tr>
+
     <tr>
+
       <td><strong>ChatGPT (GPT-5)</strong></td>
+
       <td>1–2</td>
+
       <td>N/A (manual)</td>
+
       <td>128K context</td>
+
       <td>Fast</td>
+
       <td>$20</td>
+
       <td>Prototyping, learning</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Cursor</strong></td>
+
       <td>2–3</td>
+
       <td>70-80%</td>
+
       <td>60%</td>
+
       <td>Fast</td>
+
       <td>$20-40</td>
+
       <td>AI-first editing</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Claude Code</strong></td>
+
       <td>3–4</td>
+
       <td>85-95%</td>
+
       <td>75%</td>
+
       <td>Slow</td>
+
       <td>$100+</td>
+
       <td>Complex refactoring</td>
+
     </tr>
+
     <tr>
+
       <td><strong>Devin</strong></td>
+
       <td>3?</td>
+
       <td>Unknown</td>
+
       <td>Unknown</td>
+
       <td>Unknown</td>
+
       <td>$20</td>
+
       <td>"Autonomous engineer"</td>
+
     </tr>
+
   </tbody>
+
 </table>
-```
 
 ## The Framework You Actually Need
 
