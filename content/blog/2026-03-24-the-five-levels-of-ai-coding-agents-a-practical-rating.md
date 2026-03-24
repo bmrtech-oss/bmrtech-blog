@@ -5,7 +5,7 @@ description: A personal take on AI coding tools—from Copilot’s autocomplete 
   Claude Code’s autonomous engineering—and the five levels that actually help
   you decide what to trust
 date: 2026-03-24
-draft: true
+draft: false
 tags:
   - AI coding
   - AI-assisted programming
