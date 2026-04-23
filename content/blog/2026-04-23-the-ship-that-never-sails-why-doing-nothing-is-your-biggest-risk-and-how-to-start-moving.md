@@ -6,10 +6,11 @@ description: Stuck in endless planning? Discover how to break free from software
 date: 2026-04-23
 draft: false
 tags:
-  - software development
-  - shipping software
+  - Product Development
+  - Shipping Software
+  - Analysis Paralysis
 ---
-You know the project. It started as a spark. “Imagine,” someone said, “a system so perfectly designed, so robust, it could handle anything.” The whiteboard sessions began. The requirements were debated, dissected, and rewritten. The architecture diagrams grew into breathtaking cathedrals of abstraction. This was going to be the one. The perfect release. The masterpiece.
+You know the project. It started as a spark. "Imagine," someone said, "a system so perfectly designed, so robust, it could handle anything.” The whiteboard sessions began. The requirements were debated, dissected, and rewritten. The architecture diagrams grew into breathtaking cathedrals of abstraction. This was going to be the one. The perfect release. The masterpiece.
 
 But weeks turned into months. The diagrams now have a fine layer of dust, and the only thing you’ve shipped is a shared document titled “System Design v18_final_FINAL.” The spark has been replaced by a quiet, creeping dread. You’re not building a product anymore. You’re building a monument to good intentions and stalled momentum. It’s a ship that never leaves the harbor.
 
