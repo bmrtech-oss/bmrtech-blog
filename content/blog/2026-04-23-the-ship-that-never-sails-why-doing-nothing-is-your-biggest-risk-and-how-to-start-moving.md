@@ -8,7 +8,6 @@ draft: false
 tags:
   - software development
   - shipping software
-  - analysis paralysis
 ---
 You know the project. It started as a spark. “Imagine,” someone said, “a system so perfectly designed, so robust, it could handle anything.” The whiteboard sessions began. The requirements were debated, dissected, and rewritten. The architecture diagrams grew into breathtaking cathedrals of abstraction. This was going to be the one. The perfect release. The masterpiece.
 
