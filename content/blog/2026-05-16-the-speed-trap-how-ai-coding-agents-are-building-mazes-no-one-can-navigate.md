@@ -9,8 +9,6 @@ tags:
   - architecture decision records
   - top story
 ---
-# 
-
 ---
 
 *A blog for engineering leaders, architects, and anyone who has stared at AI-generated code and thought: "What just happened here?"*
@@ -98,11 +96,8 @@ AI coding agents are issuing this debt in denominations that would have taken te
 The symptoms are already familiar. You've probably seen them in your own team:
 
 - A new engineer joins and spends their first two weeks asking questions no one can definitively answer. "Why is this service separate from that one?" Silence. Half-memory. Half-mythology.
-
 - A bug fix requires touching six files in three layers because the original structure has no clear seam to cut at. The code works. It just wasn't *composed*—it was *accumulated*.
-
 - A "small change" becomes a five-day effort because the implicit assumptions embedded in the AI-generated code are so numerous, and so undocumented, that touching anything triggers a cascade. The agent made choices the human never saw.
-
 - An architect reviews the codebase and realizes they are looking at a system that was *assembled* but never *designed*. The difference is the difference between a house and a pile of lumber. Both contain wood. Only one contains intention.
 
 Assembled. That is the operative word. AI coding agents are magnificent assemblers. They can stitch together coherent-looking components with remarkable speed. But assembly is not architecture. Assembly without intention produces elaborate machinery that runs until it doesn't—and when it doesn't, nobody knows why.
