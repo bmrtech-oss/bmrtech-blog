@@ -9,8 +9,7 @@ tags:
   - architecture decision records
   - top story
 ---
-```markdown
-#
+# 
 
 ---
 
@@ -314,5 +313,3 @@ Both, together, in the right orderâ€”thinking before coding, every single timeâ€
 ---
 
 The Top Story + ADR practice described here is derived from the gstack cycle methodology, which builds on Rich Hickey's *Design in Practice* and the Unix philosophy of composable, well-bounded systems. The ADR format is adapted from the [ADR GitHub Organization](https://adr.github.io/) and Michael Nygard's original decision record structure.
-```
-
