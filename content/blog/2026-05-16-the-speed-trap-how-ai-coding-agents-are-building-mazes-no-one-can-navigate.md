@@ -141,6 +141,8 @@ Let me ground this. Real example from a team I worked with—they needed faster 
 > *Rejected:* No cache (latency too high), in-memory cache (inconsistent after rollout).  
 > *What we are NOT doing:* We’re not building a distributed cache cluster; a single Redis instance handles current load and can be upgraded later.
 
+Notice how these two documents talk to each other. The Top Story’s “under 200ms” constraint immediately rules out the no-cache option—direct DB queries during peak would spike well above that. The ADR records that rejection explicitly. The Top Story also implies a specific user (“shopper”) and a concrete acceptance test (load recent orders, measure latency), which means the chosen Redis architecture isn’t just a technical preference—it’s the architecture that makes the purpose testable. You can point monitoring at that 200ms threshold and know within a day whether the decision was right. When an AI agent gets both documents as context, it doesn’t just see “use Redis.” It sees *why* Redis, *what will happen* if it tries to bypass the cache, and *how the result will be judged*. That’s the difference between a prompt that produces code and a prompt that produces an architectural decision the team can verify.
+
 That’s it. Together they answer what every AI agent needs: *what’s the purpose of this code, and what constraints must it operate within?* Feed that context to an agent and something changes fundamentally. It makes locally correct decisions that stay globally coherent. The output can be reviewed against an explicit standard. And you can resume work after a token limit because the decisions are documented.
 
 ---
@@ -179,8 +181,8 @@ Both, together, in that order—thinking before coding, every single time. That�
 
 ---
 
-[^1]: Google Cloud, *DORA 2024 Accelerate State of DevOps Report*, https://cloud.google.com/devops/state-of-devops  
-[^2]: GitClear, *AI Code Quality 2025*, https://www.gitclear.com/ai-code-quality-2025  
-[^3]: Uplevel, *AI Code Assistants Are Not Yet Living Up to Their Promise*, Apr 2024, https://uplevel.com/blog/ai-code-assistants-2024  
-[^4]: Martin Fowler, *AI-Assisted Software Development*, https://martinfowler.com/articles/ai-assisted-software-dev.html  
-[^5]: O’Reilly Radar, *AI-Infused Software Development*, https://www.oreilly.com/radar/ai-infused-software-development/
+[^1]: Google Cloud, [*DORA 2024 Accelerate State of DevOps Report*](https://cloud.google.com/devops/state-of-devops)  
+[^2]: GitClear, [*AI Code Quality 2025*](https://www.gitclear.com/ai-code-quality-2025)  
+[^3]: Uplevel, [*AI Code Assistants Are Not Yet Living Up to Their Promise*](https://uplevel.com/blog/ai-code-assistants-2024), Apr 2024  
+[^4]: Martin Fowler, [*AI-Assisted Software Development*](https://martinfowler.com/articles/ai-assisted-software-dev.html)  
+[^5]: O’Reilly Radar, [*AI-Infused Software Development*](https://www.oreilly.com/radar/ai-infused-software-development/)
