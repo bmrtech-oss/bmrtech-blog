@@ -10,7 +10,6 @@ tags:
   - Human-AI Collaboration
   - Spec-Driven Development
 ---
-
 ---
 
 I watched a senior architect spend four hours last week locked in a battle with an AI over an authentication flow. The AI had generated 2,000 lines of code. The architect had written a 50‑word prompt. One spoke in business logic; the other in implementation trivia. Neither understood the other. The code was garbage.
@@ -260,3 +259,4 @@ The AI didn't change. The process did.
 *I'd love to hear what you're wrestling with. Drop a comment or reach out—the best conversations start with a real problem.*
 
 ---
+
