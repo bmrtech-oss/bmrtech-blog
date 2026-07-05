@@ -7,6 +7,6 @@ module.exports = {
 		name: "Antinode Labs",
 		email: "info@antinodelabs.com",
 		url: "https://antinodelabs.com/about",
-        follow@x: "https://x.com/antinoders"
+        follow: "https://x.com/antinoders"
 	}
 }
