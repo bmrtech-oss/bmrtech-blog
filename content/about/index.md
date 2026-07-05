@@ -49,5 +49,5 @@ So we asked a different question:
 
 ---
 
-FollowUs@x.com: https://x.com/antinoders
+FollowUs@x.com: [https://x.com/antinoders](https://x.com/antinoders)
 
