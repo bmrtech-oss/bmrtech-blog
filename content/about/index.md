@@ -26,7 +26,7 @@ Traditional thinking says you've arrived. We believe you've just found the **sta
 
 Antinode Labs was founded in 2023 by a team of physicists, engineers, and data scientists who kept encountering the same limitation: every system has theoretical maximums, but real-world problems don't respect theoretical boundaries.
 
-While working on distributed systems, we repeatedly hit performance ceilings—not because of hardware limitations, but because our software was built to _approach_ peaks, not _transcend_ them.
+While working on distributed systems, we repeatedly hit performance ceilings—not because of hardware limitations, but because our software was built to *approach* peaks, not *transcend* them.
 
 So we asked a different question:
 
@@ -36,19 +36,18 @@ So we asked a different question:
 
 ### **The Beyond-Peak Principle**
 
-*   Identify the Peak: Where current systems reach maximum amplitude
-    
-*   Engineer Through: Build new architectures that treat peaks as transitions
-    
-*   Create New Waveforms: Generate performance curves that redefine what's possible
-    
+- Identify the Peak: Where current systems reach maximum amplitude
+- Engineer Through: Build new architectures that treat peaks as transitions
+- Create New Waveforms: Generate performance curves that redefine what's possible
 
 ### **Our Core Beliefs:**
 
-*   **Peaks Are Starting Lines** – Maximum amplitude is where real innovation begins
-    
-*   **Systems Create Their Own Physics** – Well-engineered software bends performance curves
-    
-*   **Resonance Over Optimization** – We build systems that amplify each other, not just run faster
-    
-*   **The Next Peak Is Always Visible** – If you're looking from the right amplitude
+- **Peaks Are Starting Lines** – Maximum amplitude is where real innovation begins
+- **Systems Create Their Own Physics** – Well-engineered software bends performance curves
+- **Resonance Over Optimization** – We build systems that amplify each other, not just run faster
+- **The Next Peak Is Always Visible** – If you're looking from the right amplitude
+
+---
+
+FollowUs@x.com: https://x.com/antinoders
+
