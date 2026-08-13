@@ -31,6 +31,7 @@ Actually, that's not true. I feel something. I feel *tired*. A deep, bone-level 
         \  || /
          '.__.'
 </pre>
+
 ---
 
 ## The Problem I See
@@ -92,7 +93,7 @@ The customers walked. One by one. "We're looking for a single platform," they sa
       / | \
        O O
       POP!
-/pre>
+</pre>
 
 **That was the first time I felt the ground shift under my feet.** All those late nights. All those brilliant solutions. All that beautiful code. And the customer just... walked away.
 
