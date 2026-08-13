@@ -48,7 +48,7 @@ But we also have **silos**.
 <pre style="white-space: pre; word-break: normal; font-family: monospace;">
     .--.    .--.    .--.
    /    \  /    \  /    \
-  | A   |  | B  |  | C  |
+   | A   | | B  |  | C  |
    \    /  \    /  \    /
     '--'    '--'    '--'
      .        .       .
@@ -84,7 +84,7 @@ The customers walked. One by one. "We're looking for a single platform," they sa
 <pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (x.x)
-      | = |
+       |=|
       /   \
       | ! |
       '-.-'
@@ -207,7 +207,7 @@ And I hate it.
 <pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (o.o)         "Take a break."
-      | = |
+       |=|
       /   \
      | ☁  |
       '-.-'
@@ -244,13 +244,13 @@ I didn't even want to code.
 
 <pre style="white-space: pre; word-break: normal; font-family: monospace;">
    ┌─────────────┐
-   │                     │
-   │    ...              │
-   │                     │
-   │  cursor             │
-   │  blinking           │
-   │                     │
-   │  for hours          │
+   │             │
+   │    ...      │
+   │             │
+   │  cursor     │
+   │  blinking   │
+   │             │
+   │  for hours  │
    └─────────────┘
   
   "I stared at the IDE."
@@ -402,7 +402,7 @@ Take a break. Breathe. Remember what it feels like to be curious about something
       
    "Stay? Leave? Open a bakery?"
    
-   ┌───────────┐
+   ┌──────────────────┐
    │      / \         │
    │     /   \        │
    │    /     \       │
@@ -410,18 +410,18 @@ Take a break. Breathe. Remember what it feels like to be curious about something
    │  /  CODE  \      │
    │ /   SILO  \      │
    │/    HELL   \     │
-   └───────────┘
-   
+   └──────────────────┘
+
           OR
-   
-   ┌───────────┐
+
+   ┌──────────────────┐
    │    🍞            │
    │   🥐 🥖         │
-   │  "Fresh bread"   │
-   │   No sprints     │
-   │   No JIRA        │
-   │   No standups    │
-   └───────────┘
+   │  "Fresh bread"  │
+   │   No sprints    │
+   │   No JIRA       │
+   │   No standups   │
+   └──────────────────┘
 </pre>
 
 **The choice isn't clear. But it's real.**
