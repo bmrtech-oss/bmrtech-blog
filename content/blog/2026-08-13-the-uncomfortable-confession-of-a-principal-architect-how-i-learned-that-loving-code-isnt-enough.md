@@ -20,18 +20,17 @@ And now? Now I'm staring at my screen, looking at AI coding agents I *used to bu
 
 Actually, that's not true. I feel something. I feel *tired*. A deep, bone-level tired that no amount of coffee or sleep or weekend escape can fix.
 
-```
+<pre>
         .-""""-.
        /        \
       /_        _\
      // \      / \\
-| \__\    /__/ |
+     |\__\    /__/|
       \    ||    /
        \    ||  /
         \  || /
          '.__.'
-```
-
+</pre>
 ---
 
 ## The Problem I See
@@ -46,7 +45,7 @@ We have **proofs of concept**. Beautiful, working proofs of concept. Every team 
 
 But we also have **silos**.
 
-```
+<pre>
     .--.    .--.    .--.
    /    \  /    \  /    \
 | A |  | B |  | C |
@@ -56,7 +55,7 @@ But we also have **silos**.
     /|\      /|\     /|\
     / \      / \     / \
    "Mine!"  "Mine!" "Mine!"
-```
+</pre>
 
 Team A solved the problem their way. Team B solved it *their* way. Team C—well, they didn't know about Team A and Team B, so they built it again.
 
@@ -82,18 +81,18 @@ Because the actual product doesn't exist yet. What we have is a collection of re
 
 The customers walked. One by one. "We're looking for a single platform," they said. "Come back when you have one."
 
-```
+<pre>
        .-.
       (x.x)
-| = |
+      | = |
       /   \
-| ! |
+      | ! |
       '-.-'
        /|\
       / | \
        O O
       POP!
-```
+/pre>
 
 **That was the first time I felt the ground shift under my feet.** All those late nights. All those brilliant solutions. All that beautiful code. And the customer just... walked away.
 
@@ -117,17 +116,17 @@ And then came the words that haunt me:
 
 Translation: *We're not going to change anything. We're going to keep sprinting in twelve different directions and hope that somehow, magically, the pieces assemble themselves. That's your job now. Make the magic happen.*
 
-```
+<pre>
        .-.
       (o_o)   "We believe in you!"
-| = |
+       |=|
       /   \
      |  $  |  <-- No budget for integration
       '-.-'
        /|\
       / | \
        O O
-```
+</pre>
 
 **The message was clear:** The organization would rather sell a dream than build a reality. And I was supposed to make that dream come true—alone, without resources, without alignment, without support.
 
@@ -145,16 +144,16 @@ I've sat in rooms with my peers—brilliant engineers, every one of them—and w
 
 We're supposed to be the adults in the room. But we act like children with crayons, each one drawing a different picture, insisting that ours is the only one that counts.
 
-```
+<pre>
     A                     B
    /|\                   /|\
   / | \                 / | \
-|  |
+    |                     |
    / \                   / \
   "My way!"            "NO, MY WAY!"
   
   [Architects arguing about data models]
-```
+</pre>
 
 **I sat in those meetings and thought:** "We're all supposed to be on the same side. But we're not. We're fighting each other while the customers walk out the door."
 
@@ -178,16 +177,16 @@ They're perfect workers.
 
 And they're making me irrelevant in a way that I didn't expect.
 
-```
+<pre>
     .--.
    /    \
-| O O |
-| > |
-|  |
+   | O O |
+   | >   |
+   |     |
    '----'
   "Beep boop. Code complete."
   "Beep boop. I don't need you."
-```
+</pre>
 
 **That was the second crack in the foundation.** I had spent months building tools to solve the problem—and the tools were doing their job perfectly. But the problem wasn't the code. It was the people. And the people were using the AI to build *more* silos. *More* isolation. *More* beautiful, disconnected pieces of a system that didn't exist.
 
@@ -205,21 +204,21 @@ I've become a manager of machines, not a builder of systems.
 
 And I hate it.
 
-```
+<pre>
        .-.
       (o.o)         "Take a break."
-| = |
+      | = |
       /   \
-| ☁ |
+     | ☁  |
       '-.-'
 
        .-.
       (>.<)         "No, keep grinding.
        |=|           You're a quitter!"
       /   \
-| 🔥 |
+     | 🔥 |
       '-.-'
-```
+</pre>
 
 **The irony was complete.** The technology I loved was making me feel obsolete. And the organization that needed it most was using it to accelerate its own dysfunction.
 
@@ -243,7 +242,7 @@ And I realized: I didn't want to fix this. I didn't want to fight this battle an
 
 I didn't even want to code.
 
-```
+<pre>
    ┌─────────────┐
    │                     │
    │    ...              │
@@ -256,7 +255,7 @@ I didn't even want to code.
   
   "I stared at the IDE."
   "I felt nothing."
-```
+</pre>
 
 **That was the moment I knew.** Not the anger. Not the frustration. The *emptiness*. The realization that something I had loved for decades had become just... noise. A background hum. A thing I did because it was Tuesday.
 
@@ -310,7 +309,7 @@ Fear: What if I can't do anything else? What if this is all I'm good at?
 
 Relief: What if I never have to sit through another architecture meeting? What if I never have to watch another brilliant engineer walk away because the system is broken? What if I never have to look at a stupid AI agent that's supposed to make my life easier but just makes me feel obsolete?
 
-```
+<pre>
       ____
      /    \
     |  🌳  |   "What if..."
@@ -319,10 +318,10 @@ Relief: What if I never have to sit through another architecture meeting? What i
      \____/
       /||\
      / || \
-|  |
+       ||
       
    "The grass looks different from here."
-```
+</pre>
 
 **I've started to imagine a life that doesn't revolve around code.** It's hard. It's scary. It's also the most peaceful thought I've had in years.
 
@@ -394,10 +393,10 @@ The voice in my head keeps saying: "You can always come back. The code will stil
 
 Take a break. Breathe. Remember what it feels like to be curious about something that isn't software."
 
-```
+<pre>
        .--.
       /    \
-| ? |
+      | ?  |
        \__/
       
    "Stay? Leave? Open a bakery?"
@@ -422,7 +421,7 @@ Take a break. Breathe. Remember what it feels like to be curious about something
    │   No JIRA        │
    │   No standups    │
    └───────────┘
-```
+</pre>
 
 **The choice isn't clear. But it's real.**
 
@@ -482,16 +481,16 @@ I'm going to be honest with myself. And I'm going to be honest with you.
 
 That's the first step. That's the only step I have right now.
 
-```
+<pre>
        .-.
       (..)   "I don't know."
-| = |
+       |=|
       /   \
-| ? |
+     | ?   |
       '-.-'
       
   "Maybe I'll figure it out tomorrow."
-```
+</pre>
 
 ---
 
