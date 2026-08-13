@@ -221,7 +221,7 @@ And I hate it.
       '-.-'
 ```
 
-**The irony was complete.** The technology I loved was making me feel obsolete. And the organisation that needed it most was using it to accelerate its own dysfunction.
+**The irony was complete.** The technology I loved was making me feel obsolete. And the organization that needed it most was using it to accelerate its own dysfunction.
 
 ---
 
@@ -258,13 +258,13 @@ I didn't even want to code.
   "I felt nothing."
 ```
 
-**That was the moment I knew.** Not the anger. Not the frustration. The *emptiness*. The realisation that something I had loved for decades had become just... noise. A background hum. A thing I did because it was Tuesday.
+**That was the moment I knew.** Not the anger. Not the frustration. The *emptiness*. The realization that something I had loved for decades had become just... noise. A background hum. A thing I did because it was Tuesday.
 
 ---
 
 ## What It Feels Like
 
-Imagine waking up one day and realising you don't love the thing you loved.
+Imagine waking up one day and realizing you don't love the thing you loved.
 
 Imagine looking at the tools you built and feeling disconnected from them—like they belong to someone else, someone who cared more than you do now.
 
@@ -274,7 +274,7 @@ That's where I am right now.
 
 It's not depression. It's not laziness. It's exhaustion. It's the accumulated weight of years of fighting for things that didn't matter. Of building systems that no one integrated. Of watching brilliant people waste their talent on isolated silos. Of seeing leadership choose dreams over reality.
 
-And it's the weight of realising that no matter how good I am, no matter how brilliant the AI agents are, I can't fix people who don't want to be fixed.
+And it's the weight of realizing that no matter how good I am, no matter how brilliant the AI agents are, I can't fix people who don't want to be fixed.
 
 ---
 
@@ -336,11 +336,11 @@ I'm trying to be honest with myself. That's the only way through.
 
 I wasn't working 80-hour weeks. I was working normal hours. But I was *disconnected*—from the work, from the team, from the purpose. I was building things that didn't matter to anyone, including me.
 
-**Lesson Two: AI doesn't make you irrelevant. Bad organisations make you irrelevant.**
+**Lesson Two: AI doesn't make you irrelevant. Bad organizations make you irrelevant.**
 
-I loved the technology. I still love the technology. But I hated what the organisation made me do with it.
+I loved the technology. I still love the technology. But I hated what the organization made me do with it.
 
-**Lesson Three: The best engineers aren't the ones who never get tired. They're the ones who recognise when they need to stop.**
+**Lesson Three: The best engineers aren't the ones who never get tired. They're the ones who recognize when they need to stop.**
 
 I've spent my whole career pushing through. Working harder. Fixing things. Being the person who makes it work.
 
@@ -464,7 +464,7 @@ I can walk away, telling myself that the system was broken, that the leadership 
 
 Or I can stay—and fight.
 
-Not fight *against* my organisation. Fight *for* it. For the possibility that we can still build something together. For the chance to prove that integration is possible. For the hope that the customers will one day see one system, not twelve demos. For the tiny chance that I can still care.
+Not fight *against* my organization. Fight *for* it. For the possibility that we can still build something together. For the chance to prove that integration is possible. For the hope that the customers will one day see one system, not twelve demos. For the tiny chance that I can still care.
 
 ---
 
@@ -476,7 +476,7 @@ Maybe I'll wake up tomorrow and want to code again. Maybe I'll stare at the scre
 
 The only thing I know for sure is this: I'm not going to pretend anymore.
 
-I'm not going to pretend that I care about the silos. I'm not going to pretend that the AI agents are going to save us. I'm not going to pretend that the organisation is going to change.
+I'm not going to pretend that I care about the silos. I'm not going to pretend that the AI agents are going to save us. I'm not going to pretend that the organization is going to change.
 
 I'm going to be honest with myself. And I'm going to be honest with you.
 
