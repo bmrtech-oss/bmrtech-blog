@@ -20,7 +20,7 @@ And now? Now I'm staring at my screen, looking at AI coding agents I *used to bu
 
 Actually, that's not true. I feel something. I feel *tired*. A deep, bone-level tired that no amount of coffee or sleep or weekend escape can fix.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
         .-""""-.
        /        \
       /_        _\
@@ -45,10 +45,10 @@ We have **proofs of concept**. Beautiful, working proofs of concept. Every team 
 
 But we also have **silos**.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
     .--.    .--.    .--.
    /    \  /    \  /    \
-| A |  | B |  | C |
+  | A   |  | B  |  | C  |
    \    /  \    /  \    /
     '--'    '--'    '--'
      .        .       .
@@ -81,7 +81,7 @@ Because the actual product doesn't exist yet. What we have is a collection of re
 
 The customers walked. One by one. "We're looking for a single platform," they said. "Come back when you have one."
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (x.x)
       | = |
@@ -116,7 +116,7 @@ And then came the words that haunt me:
 
 Translation: *We're not going to change anything. We're going to keep sprinting in twelve different directions and hope that somehow, magically, the pieces assemble themselves. That's your job now. Make the magic happen.*
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (o_o)   "We believe in you!"
        |=|
@@ -144,7 +144,7 @@ I've sat in rooms with my peers—brilliant engineers, every one of them—and w
 
 We're supposed to be the adults in the room. But we act like children with crayons, each one drawing a different picture, insisting that ours is the only one that counts.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
     A                     B
    /|\                   /|\
   / | \                 / | \
@@ -177,7 +177,7 @@ They're perfect workers.
 
 And they're making me irrelevant in a way that I didn't expect.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
     .--.
    /    \
    | O O |
@@ -204,7 +204,7 @@ I've become a manager of machines, not a builder of systems.
 
 And I hate it.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (o.o)         "Take a break."
       | = |
@@ -242,7 +242,7 @@ And I realized: I didn't want to fix this. I didn't want to fight this battle an
 
 I didn't even want to code.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
    ┌─────────────┐
    │                     │
    │    ...              │
@@ -255,6 +255,7 @@ I didn't even want to code.
   
   "I stared at the IDE."
   "I felt nothing."
+
 </pre>
 
 **That was the moment I knew.** Not the anger. Not the frustration. The *emptiness*. The realization that something I had loved for decades had become just... noise. A background hum. A thing I did because it was Tuesday.
@@ -309,7 +310,7 @@ Fear: What if I can't do anything else? What if this is all I'm good at?
 
 Relief: What if I never have to sit through another architecture meeting? What if I never have to watch another brilliant engineer walk away because the system is broken? What if I never have to look at a stupid AI agent that's supposed to make my life easier but just makes me feel obsolete?
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
       ____
      /    \
     |  🌳  |   "What if..."
@@ -393,7 +394,7 @@ The voice in my head keeps saying: "You can always come back. The code will stil
 
 Take a break. Breathe. Remember what it feels like to be curious about something that isn't software."
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .--.
       /    \
       | ?  |
@@ -481,7 +482,7 @@ I'm going to be honest with myself. And I'm going to be honest with you.
 
 That's the first step. That's the only step I have right now.
 
-<pre>
+<pre style="white-space: pre; word-break: normal; font-family: monospace;">
        .-.
       (..)   "I don't know."
        |=|
