@@ -52,10 +52,10 @@ But we also have **silos**.
 | A |  | B |  | C |
    \    /  \    /  \    /
     '--'    '--'    '--'
-     .        .        .
-    /|\      /|\      /|\
-   / \      / \      / \
-  "Mine!"  "Mine!"  "Mine!"
+     .        .       .
+    /|\      /|\     /|\
+    / \      / \     / \
+   "Mine!"  "Mine!" "Mine!"
 ```
 
 Team A solved the problem their way. Team B solved it *their* way. Team C—well, they didn't know about Team A and Team B, so they built it again.
@@ -239,19 +239,19 @@ Not in an angry way. Not in a sad way. Just... nothing. A void where passion use
 
 I closed the IDE. I went for a walk. I stared at a tree for a while.
 
-And I realised: I didn't want to fix this. I didn't want to fight this battle anymore.
+And I realized: I didn't want to fix this. I didn't want to fight this battle anymore.
 
 I didn't even want to code.
 
 ```
    ┌─────────────┐
-   │             │
-   │    ...      │
-   │             │
-   │  cursor     │
-   │  blinking   │
-   │             │
-   │  for hours  │
+   │                     │
+   │    ...              │
+   │                     │
+   │  cursor             │
+   │  blinking           │
+   │                     │
+   │  for hours          │
    └─────────────┘
   
   "I stared at the IDE."
@@ -398,11 +398,11 @@ Take a break. Breathe. Remember what it feels like to be curious about something
        .--.
       /    \
 | ? |
-      \__/
+       \__/
       
    "Stay? Leave? Open a bakery?"
    
-   ┌──────────────────┐
+   ┌───────────┐
    │      / \         │
    │     /   \        │
    │    /     \       │
@@ -410,18 +410,18 @@ Take a break. Breathe. Remember what it feels like to be curious about something
    │  /  CODE  \      │
    │ /   SILO  \      │
    │/    HELL   \     │
-   └──────────────────┘
+   └───────────┘
    
           OR
    
-   ┌──────────────────┐
+   ┌───────────┐
    │    🍞            │
    │   🥐 🥖         │
-   │  "Fresh bread"  │
-   │   No sprints    │
-   │   No JIRA       │
-   │   No standups   │
-   └──────────────────┘
+   │  "Fresh bread"   │
+   │   No sprints     │
+   │   No JIRA        │
+   │   No standups    │
+   └───────────┘
 ```
 
 **The choice isn't clear. But it's real.**
