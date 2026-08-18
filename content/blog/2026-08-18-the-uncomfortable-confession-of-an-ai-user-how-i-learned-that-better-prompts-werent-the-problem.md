@@ -1,6 +1,6 @@
 ---
-title: "The Uncomfortable Confession of an AI User: How I Learned That Better
-  Prompts Weren't the Problem"
+title: "The AI Productivity Paradox: Why AI Made Me Slower and What I Finally
+  Did About It. "
 description: I spent a year blaming AI for deleting my code. Then I looked in
   the mirror. Here's what the data and my own mistakes; taught me about using AI
   assistants the right way.
