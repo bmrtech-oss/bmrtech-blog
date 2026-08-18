@@ -12,27 +12,27 @@ tags:
 ---
 ---
 
-```
+
+<pre>
 
 +--------------------------------------------------------------------+
-|  |
-| T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
-| O F   A N   A I   U S E R |
-|  |
-| .         - .       - . |
-| / \         / \       / \ |
-|  | A |  | B |  | C |  |
-| \ /         \ /       \ / |
-| ' - '       ' - '      ' - ' |
-|  |
-| Dump it     Fix it    Trust it |
-|  |
-| "The problem isn't the AI. It's me." |
-|  |
+|                                                                    |
+|            T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
+|            O F   A N   A I   U S E R                               |
+|                                                                    |
+|                   .        - .      - .                            |
+|                  / \       / \       / \                           |
+|                 | A |     | B |     | C |                          |
+|                  \ /       \ /       \ /                           |
+|                 ' - '     ' - '     ' - '                          |
+|                                                                    |
+|               Dump it    Fix it    Trust it                        |
+|                                                                    |
+|            "The problem isn't the AI. It's me."                    |
+|                                                                    |
 +--------------------------------------------------------------------+
 
-
-```
+</pre>
 
 ---
 
@@ -198,22 +198,21 @@ Let's talk. The best conversations always start with uncomfortable confessions.
 
 ---
 
-```
+<pre>
 
 +--------------------------------------------------------------------+
-|  |
-| Plan before you prompt. |
-| Approve before you apply. |
-| Chunk before you chat. |
-|  |
-| Try it for one day. Just one. |
-|  |
-| "The apologies will stop." |
-|  |
+|                                                                    |
+|            Plan before you prompt.                                 |
+|            Approve before you apply.                               |
+|            Chunk before you chat.                                  |
+|                                                                    |
+|            Try it for one day. Just one.                           |
+|                                                                    |
+|            "The apologies will stop."                              |
+|                                                                    |
 +--------------------------------------------------------------------+
 
-
-```
+</pre>
 
 ---
 
