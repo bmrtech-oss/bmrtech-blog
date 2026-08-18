@@ -1,38 +1,40 @@
 ---
 title: "The Uncomfortable Confession of an AI User: How I Learned That Better
   Prompts Weren't the Problem"
+description: I spent a year blaming AI for deleting my code. Then I looked in
+  the mirror. Here's what the data and my own mistakes; taught me about using AI
+  assistants the right way.
 date: 2026-08-18
 draft: false
 tags:
   - AI Coding Assistants
   - Prompt Engineering
 ---
-
 ---
 
-<pre>
+```
 
 +--------------------------------------------------------------------+
-|                                                                    |
-|            T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
-|            O F   A N   A I   U S E R                               |
-|                                                                    |
-|                   .         - .       - .                          |
-|                  / \         / \       / \                         |
-|                 | A |       | B |     | C |                        |
-|                  \ /         \ /       \ /                         |
-|                 ' - '       ' - '      ' - '                       |
-|                                                                    |
-|                 Dump it     Fix it    Trust it                     |
-|                                                                    |
-|            "The problem isn't the AI. It's me."                    |
-|                                                                    |
+|  |
+| T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
+| O F   A N   A I   U S E R |
+|  |
+| .         - .       - . |
+| / \         / \       / \ |
+|  | A |  | B |  | C |  |
+| \ /         \ /       \ / |
+| ' - '       ' - '      ' - ' |
+|  |
+| Dump it     Fix it    Trust it |
+|  |
+| "The problem isn't the AI. It's me." |
+|  |
 +--------------------------------------------------------------------+
 
-</pre>
+
+```
 
 ---
-
 
 I need to write this down. Not because I have a solution. Not because I've figured it out.
 
@@ -196,20 +198,22 @@ Let's talk. The best conversations always start with uncomfortable confessions.
 
 ---
 
-<pre>
+```
 
 +--------------------------------------------------------------------+
-|                                                                    |
-|            Plan before you prompt.                                 |
-|            Approve before you apply.                               |
-|            Chunk before you chat.                                  |
-|                                                                    |
-|            Try it for one day. Just one.                           |
-|                                                                    |
-|            "The apologies will stop."                              |
-|                                                                    |
+|  |
+| Plan before you prompt. |
+| Approve before you apply. |
+| Chunk before you chat. |
+|  |
+| Try it for one day. Just one. |
+|  |
+| "The apologies will stop." |
+|  |
 +--------------------------------------------------------------------+
 
-</pre>
+
+```
 
 ---
+
