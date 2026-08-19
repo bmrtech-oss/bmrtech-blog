@@ -12,27 +12,27 @@ tags:
 ---
 ---
 
-
-<pre>
+```
 
 +--------------------------------------------------------------------+
-|                                                                    |
-|            T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
-|            O F   A N   A I   U S E R                               |
-|                                                                    |
-|                   .        - .      - .                            |
-|                  / \       / \       / \                           |
-|                 | A |     | B |     | C |                          |
-|                  \ /       \ /       \ /                           |
-|                 ' - '     ' - '     ' - '                          |
-|                                                                    |
-|               Dump it    Fix it    Trust it                        |
-|                                                                    |
-|            "The problem isn't the AI. It's me."                    |
-|                                                                    |
+|  |
+| T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
+| O F   A N   A I   U S E R |
+|  |
+| .        - .      - . |
+| / \       / \       / \ |
+|  | A |  | B |  | C |  |
+| \ /       \ /       \ / |
+| ' - '     ' - '     ' - ' |
+|  |
+| Dump it    Fix it    Trust it |
+|  |
+| "The problem isn't the AI. It's me." |
+|  |
 +--------------------------------------------------------------------+
 
-</pre>
+
+```
 
 ---
 
@@ -142,11 +142,13 @@ I read it. I spot the flaw. I correct it. I say "Proceed."
 
 No more deleted slides. No more apologies.
 
-### Rule Two: One File Per Chat
+### **Rule Two: Isolate Your Scope**
 
 The context window is a two-foot desk. You can only lay out a few things at a time. Dump your entire codebase on it, and things fall off.
 
-Fix: Never paste more than one file per chat. If a task touches three files, spin up three separate chats. Finish File A. Close it. Open a new chat for File B. Only paste File B.
+Fix: **Only paste what's relevant to the immediate change.** If you're editing one function, paste that function plus 10 lines above and below for context. If your task touches 3-4 related files, paste them—but keep it lean. The goal is precision, not an arbitrary file count.
+
+The real enemy isn't "multiple files." It's **bloat**. Every extra line of irrelevant code dilutes the AI's attention. Ask yourself: *"What's the minimum I need to paste to make this change?"* Paste that and nothing more.
 
 ### Rule Three: Summarize, Don't Re-paste
 
@@ -198,21 +200,22 @@ Let's talk. The best conversations always start with uncomfortable confessions.
 
 ---
 
-<pre>
+```
 
 +--------------------------------------------------------------------+
-|                                                                    |
-|            Plan before you prompt.                                 |
-|            Approve before you apply.                               |
-|            Chunk before you chat.                                  |
-|                                                                    |
-|            Try it for one day. Just one.                           |
-|                                                                    |
-|            "The apologies will stop."                              |
-|                                                                    |
+|  |
+| Plan before you prompt. |
+| Approve before you apply. |
+| Chunk before you chat. |
+|  |
+| Try it for one day. Just one. |
+|  |
+| "The apologies will stop." |
+|  |
 +--------------------------------------------------------------------+
 
-</pre>
+
+```
 
 ---
 
