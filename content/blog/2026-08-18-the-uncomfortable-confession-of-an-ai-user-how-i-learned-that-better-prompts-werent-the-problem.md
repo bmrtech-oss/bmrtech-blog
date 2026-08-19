@@ -12,30 +12,6 @@ tags:
 ---
 ---
 
-```
-
-+--------------------------------------------------------------------+
-|  |
-| T H E   U N C O M F O R T A B L E   C O N F E S S I O N |
-| O F   A N   A I   U S E R |
-|  |
-| .        - .      - . |
-| / \       / \       / \ |
-|  | A |  | B |  | C |  |
-| \ /       \ /       \ / |
-| ' - '     ' - '     ' - ' |
-|  |
-| Dump it    Fix it    Trust it |
-|  |
-| "The problem isn't the AI. It's me." |
-|  |
-+--------------------------------------------------------------------+
-
-
-```
-
----
-
 I need to write this down. Not because I have a solution. Not because I've figured it out.
 
 I need to write it down because I keep staring at Claude apologizing to me for the fifth time today, and I finally have to admit something out loud:
@@ -47,6 +23,29 @@ Not the context window. Not the model. Not the system prompt I copied from Twitt
 Me.
 
 And the worst part? I've known it for months. I just didn't want to say it.
+
+
+---
+
+<pre>
+
++--------------------------------------------------------------------+
+|                                                                    |
+|            T H E   P R O D U C T I V I T Y   P A R A D O X        |
+|                                                                    |
+|                   .    -     .         - .                         |
+|                  / \        / \         / \                        |
+|                 | A |      | B |       | C |                       |
+|                  \ /        \ /         \ /                        |
+|                   ' - '    ' - '       ' - '                       |
+|                                                                    |
+|                  Dump it    Fix it    Trust it                     |
+|                                                                    |
+|            "The AI assistant is not your employee."                |
+|                                                                    |
++--------------------------------------------------------------------+
+
+</pre>
 
 ---
 
@@ -124,11 +123,13 @@ I didn't find these rules in a tutorial. I didn't watch a YouTube video.
 
 I discovered them the hard way—by losing code, getting angry, calming down, and finally admitting that I was the variable that needed to change.
 
-### Rule One: Plan Before You Prompt
+### Rule One: Plan, Don't Pray
 
-I was in "Follow Mode." I'd say *"change the font"* and Claude would output 200 lines of code. I'd copy it without reading, overwrite everything, and then wonder why my slides vanished.
+Stop asking the AI to read your mind. You're not praying to the AI gods—you're directing a tool.
 
-The fix is brutally simple: **Force "Plan & Approve" mode.**
+**The trap:** You say "change the font" and pray the AI knows which font, which slide, and which file.
+
+**The fix:** Force "Plan & Approve" mode.
 
 Add this to your custom instructions:
 
@@ -142,21 +143,33 @@ I read it. I spot the flaw. I correct it. I say "Proceed."
 
 No more deleted slides. No more apologies.
 
-### **Rule Two: Isolate Your Scope**
+---
+
+### Rule Two: The 2-Foot Desk
 
 The context window is a two-foot desk. You can only lay out a few things at a time. Dump your entire codebase on it, and things fall off.
 
-Fix: **Only paste what's relevant to the immediate change.** If you're editing one function, paste that function plus 10 lines above and below for context. If your task touches 3-4 related files, paste them—but keep it lean. The goal is precision, not an arbitrary file count.
+**The trap:** You paste your entire project into the prompt. "Here's everything. Now fix it."
 
-The real enemy isn't "multiple files." It's **bloat**. Every extra line of irrelevant code dilutes the AI's attention. Ask yourself: *"What's the minimum I need to paste to make this change?"* Paste that and nothing more.
+**The fix:** Paste only what you're changing. If you're editing one function, paste that function plus 10 lines of context. If your task touches 3-4 files, paste them—but keep it lean.
 
-### Rule Three: Summarize, Don't Re-paste
+Ask yourself: *"What's the minimum I need to paste to make this change?"*
 
-When moving from Task 1 to Task 2, do NOT paste the 500 lines you just generated. Summarize it in three bullet points:
+Be a sniper, not a shotgun. Your desk is small. Keep it tidy.
+
+---
+
+### Rule Three: Handover, Not Hangover
+
+When you finish a task, close the loop. Don't carry yesterday's baggage into today's work.
+
+**The trap:** You paste your entire chat history into the next prompt. "Here's everything we did. Now do this."
+
+**The fix:** Summarize what you've built in 3 bullet points. Move on.
 
 > *"Context: Built a login() function returning a JWT token. DB is PostgreSQL. Now here's my NEW file for Task 2..."*
 
-This compresses 500 tokens into 50. Saves space for the actual work. Keeps the AI focused instead of drowning in its own history.
+Compress 500 tokens into 50. Keep the AI focused on the present, not drowning in its own history.
 
 ---
 
@@ -174,7 +187,9 @@ You're not the problem. The way you're using the tool is the problem.
 
 And that's fixable. It doesn't require a new model or a better subscription. It just requires you to slow down.
 
-Plan before you prompt. Approve before you apply. Chunk before you chat.
+**Plan, don't pray.**
+**Mind the 2-foot desk.**
+**Handover, not hangover.**
 
 Try it for one day. Just one.
 
@@ -200,22 +215,20 @@ Let's talk. The best conversations always start with uncomfortable confessions.
 
 ---
 
-```
+<pre>
 
 +--------------------------------------------------------------------+
-|  |
-| Plan before you prompt. |
-| Approve before you apply. |
-| Chunk before you chat. |
-|  |
-| Try it for one day. Just one. |
-|  |
-| "The apologies will stop." |
-|  |
+|                                                                    |
+|            Plan, don't pray.                                       |
+|            Mind the 2-foot desk.                                   |
+|            Handover, not hangover.                                 |
+|                                                                    |
+|            Try it for one day. Just one.                           |
+|                                                                    |
+|            "The apologies will stop."                              |
+|                                                                    |
 +--------------------------------------------------------------------+
 
-
-```
-
+</pre>
 ---
 
