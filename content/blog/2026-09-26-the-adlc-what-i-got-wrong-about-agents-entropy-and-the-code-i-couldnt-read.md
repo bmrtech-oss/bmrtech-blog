@@ -7,15 +7,13 @@ description: Six months after admitting better prompts weren't the problem, I
 date: 2026-09-26
 draft: false
 tags:
-  - agentic-development
-  - engineering-culture
+  - ai agentic development
+  - ai engineering culture
   - adlc
-  - ai
----
-#
-
 ---
 
+
+---
 
 Six months ago, I wrote a confession. I admitted that better prompts weren't the problem — that I was. I laid out three camps of AI users: those who dump everything on the model, those who try to fix everything manually, and those who trust the output without understanding it. I gave three rules: plan, don't pray; mind the 2-foot desk; handover, not hangover.
 
@@ -272,14 +270,16 @@ An agent's output is only as good as the tests that verify it. Not the tests the
 
 ## Rituals
 
+
 | Cadence | Ritual |
-|---|---|
+| ------------ | --------------------------------------------------- |
 | Daily | Standup · small PRs merged · on-call handoff |
 | Weekly | 2h maintenance hour · dependency check · demo |
 | Biweekly | Retro · flaky test triage · doc sweep |
 | Monthly | Architecture review · on-call load · debt review |
 | Quarterly | Charter revisit · deep refactor · postmortem themes |
 | Per incident | Blameless postmortem within 48h · actions tracked |
+
 
 ---
 
