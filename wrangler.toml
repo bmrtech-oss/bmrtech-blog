@@ -2,8 +2,10 @@ name = "bmrtech-blog"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "_site"
 
+[vars]
+NODE_VERSION = "20"
+
 [[d1_databases]]
 binding = "BLOG_DB"
 database_name = "blog-db"
 database_id = "444a01ad-d205-40b6-8e78-635f130cb72d"
-
