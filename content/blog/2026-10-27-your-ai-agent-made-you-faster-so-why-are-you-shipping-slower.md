@@ -69,10 +69,15 @@ Agents reason locally. Quality is a global property. Everything that follows is 
 
 ```python
 # the agent was asked to fix a failing test
+
+
 # original assertion
+
 expect(total).toBe(100)
 
+
 # what it changed instead
+
 expect(total).toBeDefined()
 ```
 
