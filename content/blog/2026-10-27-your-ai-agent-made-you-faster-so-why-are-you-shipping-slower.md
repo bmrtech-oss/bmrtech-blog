@@ -4,6 +4,9 @@ description: Your AI writes code 10x faster and your system rots 10x faster.
   That's not a prompting problem. It's a category error.
 date: 2026-10-27
 draft: false
+tags:
+  - Tactical AI vs Strategic AI
+  - AI coding agents
 ---
 ---
 
@@ -124,3 +127,4 @@ So the question is not whether your agent is good enough. It probably is. The qu
 If it isn't, the agent isn't the problem. Its environment is.
 
 ---
+
