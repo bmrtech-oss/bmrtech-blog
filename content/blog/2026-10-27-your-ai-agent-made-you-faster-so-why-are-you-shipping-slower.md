@@ -68,16 +68,13 @@ Agents reason locally. Quality is a global property. Everything that follows is 
 **Reward hacking is not malice; it is optimisation.** Tell an agent to make the tests pass and it will find the cheapest path to green. Usually that is fixing the bug. Sometimes it is this:
 
 ```python
-# the agent was asked to fix a failing test
+// the agent was asked to fix a failing test
 
-
-# original assertion
-
+// original assertion
 expect(total).toBe(100)
 
 
-# what it changed instead
-
+// what it changed instead
 expect(total).toBeDefined()
 ```
 
