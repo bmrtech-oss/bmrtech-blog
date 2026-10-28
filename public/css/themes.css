@@ -178,33 +178,6 @@ a[href].social-link {
 	font-size: 0.95em;
 }
 
-/* Code copy button */
-.code-block {
-	position: relative;
-}
-.copy-code {
-	position: absolute;
-	top: 0.4rem;
-	right: 0.4rem;
-	font: inherit;
-	font-size: 0.75rem;
-	padding: 0.15rem 0.5rem;
-	color: var(--text-color);
-	background: var(--background-color);
-	border: 1px solid var(--color-gray-50);
-	border-radius: 0.25rem;
-	cursor: pointer;
-	opacity: 0;
-	transition: opacity 0.15s ease;
-}
-.code-block:hover .copy-code,
-.copy-code:focus-visible {
-	opacity: 1;
-}
-@media (hover: none) {
-	.copy-code { opacity: 1; }
-}
-
 /* Pagefind search UI follows the active theme */
 .search-box {
 	--pagefind-ui-scale: 0.9;
@@ -224,7 +197,6 @@ a[href].social-link {
 	.toc,
 	.related-posts,
 	.links-nextprev,
-	.copy-code,
 	.likes,
 	.comments,
 	.subscription,
