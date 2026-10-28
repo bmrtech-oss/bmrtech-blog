@@ -20,21 +20,6 @@
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-
-		--background-color: #15202b;
-	}
-}
-
 
 /* Global stylesheet */
 * {
@@ -86,7 +71,7 @@ body {
 
 .comparison-table th,
 .comparison-table td {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--table-border, rgba(0, 0, 0, 0.1));
   padding: 0.75rem;
   text-align: left;
 }
@@ -98,28 +83,9 @@ body {
 
 /* Optional: subtle hover effect for readability */
 .comparison-table tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: var(--table-hover, rgba(0, 0, 0, 0.02));
 }
 
-/* Dark mode support – works automatically if your site has a .dark class or prefers-color-scheme */
-@media (prefers-color-scheme: dark) {
-  .comparison-table th,
-  .comparison-table td {
-    border-bottom-color: rgba(255, 255, 255, 0.15);
-  }
-  .comparison-table tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.02);
-  }
-}
-
-/* If your site uses a .dark class on body/html, use this instead */
-.dark .comparison-table th,
-.dark .comparison-table td {
-  border-bottom-color: rgba(255, 255, 255, 0.15);
-}
-.dark .comparison-table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.02);
-}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {

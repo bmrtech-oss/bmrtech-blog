@@ -105,6 +105,28 @@ module.exports = function(eleventyConfig) {
 			.sort((a, b) => a.slug.localeCompare(b.slug));
 	});
 
+	// Estimated reading time in minutes for rendered post HTML
+	eleventyConfig.addFilter("readingTime", html => {
+		const words = String(html || "").replace(/<[^>]*>/g, " ").split(/\s+/).filter(Boolean).length;
+		return Math.max(1, Math.round(words / 220));
+	});
+
+	// Posts sharing the most tags with the current page (newest first on ties)
+	eleventyConfig.addFilter("relatedPosts", (posts, page, tags, limit = 3) => {
+		const ignored = ["all", "nav", "post", "posts"];
+		const mine = new Set((tags || []).filter(t => !ignored.includes(t)).map(t => t.toLowerCase()));
+		return (posts || [])
+			.filter(p => p.url !== page.url)
+			.map(p => ({
+				post: p,
+				score: (p.data.tags || []).filter(t => mine.has(String(t).toLowerCase())).length
+			}))
+			.filter(x => x.score > 0)
+			.sort((a, b) => b.score - a.score || b.post.date - a.post.date)
+			.slice(0, limit)
+			.map(x => x.post);
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {

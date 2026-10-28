@@ -279,39 +279,6 @@
     --heading-color: #1f2937;
 }
 
-/* Dark theme support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #e5e7eb;
-        --text-muted: #9ca3af;
-        --bg-color: #111827;
-        --card-bg: #1f2937;
-        --border-color: #374151;
-        --input-bg: #374151;
-        --input-text: #f3f4f6;
-        --input-border: #4b5563;
-        --focus-color: #60a5fa;
-        --focus-shadow: rgba(96, 165, 250, 0.2);
-        --accent-color: #60a5fa;
-        --button-bg: #2563eb;
-        --button-text: #ffffff;
-        --button-hover: #1d4ed8;
-        --button-disabled-bg: #4b5563;
-        --button-disabled-text: #9ca3af;
-        --like-bg: #7f1d1d;
-        --like-text: #fecaca;
-        --like-border: #991b1b;
-        --like-hover-bg: #991b1b;
-        --like-hover-border: #7f1d1d;
-        --like-count-bg: #dc2626;
-        --like-count-text: #ffffff;
-        --secondary-button-bg: #4b5563;
-        --secondary-button-text: #e5e7eb;
-        --secondary-button-hover: #374151;
-        --heading-color: #f3f4f6;
-    }
-}
-
 /* Loading States */
 .loading {
     opacity: 0.7;

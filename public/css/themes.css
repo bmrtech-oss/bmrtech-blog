@@ -1,0 +1,155 @@
+/* Theme overrides. Light is the default defined in index.css / components.css.
+   The active theme is set via <html data-theme="light|dark|solarized"> (see theme.js). */
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+	--text-color-link: #1493fb;
+	--text-color-link-active: #6969f7;
+	--text-color-link-visited: #a6a6f8;
+	--background-color: #15202b;
+	--message-box-bg: #082840;
+	--table-border: rgba(255, 255, 255, 0.15);
+	--table-hover: rgba(255, 255, 255, 0.02);
+
+	--text-color: #e5e7eb;
+	--text-muted: #9ca3af;
+	--bg-color: #111827;
+	--card-bg: #1f2937;
+	--border-color: #374151;
+	--input-bg: #374151;
+	--input-text: #f3f4f6;
+	--input-border: #4b5563;
+	--focus-color: #60a5fa;
+	--focus-shadow: rgba(96, 165, 250, 0.2);
+	--accent-color: #60a5fa;
+	--button-bg: #2563eb;
+	--button-text: #ffffff;
+	--button-hover: #1d4ed8;
+	--button-disabled-bg: #4b5563;
+	--button-disabled-text: #9ca3af;
+	--like-bg: #7f1d1d;
+	--like-text: #fecaca;
+	--like-border: #991b1b;
+	--like-hover-bg: #991b1b;
+	--like-hover-border: #7f1d1d;
+	--like-count-bg: #dc2626;
+	--like-count-text: #ffffff;
+	--secondary-button-bg: #4b5563;
+	--secondary-button-text: #e5e7eb;
+	--secondary-button-hover: #374151;
+	--heading-color: #f3f4f6;
+}
+
+/* Solarized Light */
+:root[data-theme="solarized"] {
+	color-scheme: light;
+
+	--color-gray-20: #93a1a1;
+	--color-gray-50: #93a1a1;
+	--color-gray-90: #586e75;
+	--text-color-link: #268bd2;
+	--text-color-link-active: #d33682;
+	--text-color-link-visited: #6c71c4;
+	--background-color: #fdf6e3;
+	--message-box-bg: #eee8d5;
+	--table-border: rgba(88, 110, 117, 0.25);
+	--table-hover: rgba(88, 110, 117, 0.06);
+
+	--text-color: #586e75;
+	--text-muted: #657b83;
+	--bg-color: #fdf6e3;
+	--card-bg: #eee8d5;
+	--border-color: #d6cfb8;
+	--input-bg: #fdf6e3;
+	--input-text: #073642;
+	--input-border: #93a1a1;
+	--focus-color: #268bd2;
+	--focus-shadow: rgba(38, 139, 210, 0.2);
+	--accent-color: #268bd2;
+	--button-bg: #268bd2;
+	--button-text: #fdf6e3;
+	--button-hover: #1f78b8;
+	--button-disabled-bg: #93a1a1;
+	--button-disabled-text: #eee8d5;
+	--like-bg: #fbe9e0;
+	--like-text: #dc322f;
+	--like-border: #f1b7a8;
+	--like-hover-bg: #f6d5c8;
+	--like-hover-border: #dc322f;
+	--like-count-bg: #dc322f;
+	--like-count-text: #fdf6e3;
+	--secondary-button-bg: #657b83;
+	--secondary-button-text: #fdf6e3;
+	--secondary-button-hover: #586e75;
+	--heading-color: #073642;
+}
+
+/* Theme switcher: one icon button that cycles light -> dark -> solarized */
+a[href].social-link {
+	margin-left: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	color: var(--text-color);
+	border: 1px solid var(--color-gray-50);
+	border-radius: 50%;
+}
+.social-link:hover {
+	background-color: var(--color-gray-20);
+}
+.social-link:focus-visible {
+	outline: 2px solid var(--text-color-link);
+	outline-offset: 2px;
+}
+.theme-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	padding: 0;
+	color: var(--text-color);
+	background: transparent;
+	border: 1px solid var(--color-gray-50);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.15s ease;
+}
+.theme-toggle:hover {
+	background-color: var(--color-gray-20);
+}
+.theme-toggle:focus-visible {
+	outline: 2px solid var(--text-color-link);
+	outline-offset: 2px;
+}
+.theme-toggle svg {
+	display: none;
+}
+:root[data-theme="light"] .theme-toggle .icon-light,
+:root[data-theme="dark"] .theme-toggle .icon-dark,
+:root[data-theme="solarized"] .theme-toggle .icon-solarized {
+	display: block;
+}
+/* Related posts */
+.related-posts {
+	margin: 2rem 0;
+	padding-top: 1rem;
+	border-top: 1px dashed var(--color-gray-20);
+}
+.related-posts h2 {
+	font-size: 1.125em;
+}
+.related-posts ul {
+	padding-left: 1.25rem;
+}
+.related-posts time {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+	margin-left: 0.5em;
+}

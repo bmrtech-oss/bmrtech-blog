@@ -1,6 +1,6 @@
 /* Message Box */
 .message-box {
-	--color-message-box: #ffc;
+	--color-message-box: var(--message-box-bg, #ffc);
 
 	display: block;
 	background-color: var(--color-message-box);
@@ -9,10 +9,4 @@
 }
 .message-box ol {
 	margin-top: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	.message-box {
-		--color-message-box: #082840;
-	}
 }
