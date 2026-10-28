@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Search
+eleventyNavigation:
+  key: Search
+  order: 4
+---
+<h1>Search</h1>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<div id="search" class="search-box"><noscript>Search needs JavaScript enabled.</noscript></div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+	window.addEventListener("DOMContentLoaded", function () {
+		if (typeof PagefindUI === "undefined") {
+			document.getElementById("search").textContent = "Search is not available in this build.";
+			return;
+		}
+		var q = new URLSearchParams(location.search).get("q");
+		var ui = new PagefindUI({ element: "#search", showImages: false, resetStyles: false, autofocus: true });
+		if (q) ui.triggerSearch(q);
+	});
+</script>

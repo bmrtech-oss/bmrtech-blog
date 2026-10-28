@@ -4,7 +4,7 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-<h1>{{ title }}</h1>
+<h1 data-pagefind-meta="title">{{ title }}</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -15,7 +15,19 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 
-<div>
+{%- set tocItems = content | toc %}
+{%- if tocItems.length >= 3 %}
+<details class="toc" open>
+	<summary>On this page</summary>
+	<ul>
+	{%- for item in tocItems %}
+		<li class="toc-level-{{ item.level }}"><a href="#{{ item.id }}">{{ item.text }}</a></li>
+	{%- endfor %}
+	</ul>
+</details>
+{%- endif %}
+
+<div data-pagefind-body>
 	{{ content | safe }}
 </div>
 

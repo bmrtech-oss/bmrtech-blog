@@ -8,6 +8,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { spawnSync } = require("node:child_process");
+const path = require("node:path");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -125,6 +127,33 @@ module.exports = function(eleventyConfig) {
 			.sort((a, b) => b.score - a.score || b.post.date - a.post.date)
 			.slice(0, limit)
 			.map(x => x.post);
+	});
+
+	// Build the Pagefind search index after each build (full builds only, not --serve incrementals)
+	eleventyConfig.on("eleventy.after", ({ dir, runMode }) => {
+		const result = spawnSync(
+			process.execPath,
+			[path.join(__dirname, "node_modules", "pagefind", "lib", "runner", "bin.cjs"), "--site", dir.output, "--quiet"],
+			{ stdio: "inherit" }
+		);
+		if(result.status !== 0) {
+			console.warn("[pagefind] Search index was not built.");
+		}
+	});
+
+	// Table of contents from h2/h3 headings that already have anchor ids
+	eleventyConfig.addFilter("toc", html => {
+		const items = [];
+		const re = /<h([23]) id="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g;
+		let m;
+		while((m = re.exec(String(html || "")))) {
+			const text = m[3]
+				.replace(/<a class="header-anchor"[\s\S]*?<\/a>/, "")
+				.replace(/<[^>]*>/g, "")
+				.trim();
+			if(text) items.push({ level: Number(m[1]), id: m[2], text });
+		}
+		return items;
 	});
 
 	// Customize Markdown library settings:
