@@ -4,9 +4,9 @@ description: A promotion guide for engineers shipping CLIs, APIs, and libraries
 date: 2026-10-17
 draft: false
 tags:
-  - Multi Agent
-  - Agentic Systems
+  - AI Agents
   - AI Engineering
+  - Software Architecture
 ---
 # 
 

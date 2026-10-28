@@ -6,6 +6,7 @@ draft: false
 tags:
   - Software Principles
   - Product Development
+  - Software Architecture
 ---
 Let's be honest for a second. We've all been there. Staring at a screen, wrestling with a problem of our own making. A feature that seemed so essential six months ago now just looks like technical debt with a pretty name. A codebase so tangled that even the thought of touching it makes you reach for another coffee.
 

@@ -6,9 +6,8 @@ description: " Your codebase is fine. Your CI is green. Your backlog is groomed.
 date: 2026-06-23
 draft: false
 tags:
-  - action mindset
-  - discipline edge
-  - resilient focus
+  - Career Growth
+  - Engineering Leadership
 ---
  
 ---

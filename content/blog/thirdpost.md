@@ -4,9 +4,9 @@ description: This is a post is a proposal for turning wait-time into win-win opp
 date: 2025-09-18
 draft: false
 tags:
-  - Software Development
-  - Teamwork
   - Engineering Culture
+  - Developer Experience
+  - Teamwork
 ---
 We know the scene all too well. You’re cruising through your task, deep in the flow, when suddenly—nothing. A recent deployment from another team has introduced a bug that brings your work to a screeching halt. Your momentum evaporates.
 

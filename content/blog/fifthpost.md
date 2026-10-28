@@ -4,6 +4,9 @@ title: "A Case Study in Architectural Transition: When Intentions Don't Match
 description: " Lessons from a Distributed System to Monolith Consolidation"
 date: 2025-09-19
 draft: false
+tags:
+  - Software Architecture
+  - Engineering Leadership
 ---
 ## **Introduction**
 

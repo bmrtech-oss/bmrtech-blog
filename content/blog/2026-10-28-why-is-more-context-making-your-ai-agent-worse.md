@@ -6,9 +6,9 @@ description: You gave it the whole codebase, a million-token window, and a
 date: 2026-10-28
 draft: false
 tags:
-  - AI Agents
-  - Logical Thinking
   - AI Coding
+  - AI Agents
+  - AI Engineering
 ---
 ---
 

@@ -7,9 +7,8 @@ description: A personal take on AI coding tools—from Copilot’s autocomplete 
 date: 2026-03-24
 draft: false
 tags:
-  - AI coding
-  - AI-assisted programming
-  - Autonomous coding
+  - AI Coding
+  - AI Agents
 ---
 Here is the rating of ChatGPT, Copilot, Cursor, and Claude Code against a "5 Levels of AI Coding" framework. This is timely because the industry is finally moving beyond "which AI is best?" to "how much autonomy should I give this thing?" Let me give you an honest, practical rating based on real-world performance data and a framework that actually makes sense.
 

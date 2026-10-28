@@ -5,9 +5,10 @@ description: How AI-Generated Code Creates Complexity Debt That Destroys
 date: 2026-05-16
 draft: false
 tags:
-  - ai-generated code complexity
-  - architecture decision records
-  - top story
+  - AI Coding
+  - AI Agents
+  - Software Architecture
+  - Architecture Decision Records
 ---
 ---
 

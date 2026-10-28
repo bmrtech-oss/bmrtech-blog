@@ -84,6 +84,27 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	// One entry per tag slug, so tags differing only by case/punctuation
+	// (e.g. "AI coding" and "AI Coding") share a single tag page.
+	eleventyConfig.addCollection("tagPages", collectionApi => {
+		const slugify = eleventyConfig.getFilter("slugify");
+		const ignored = ["all", "nav", "post", "posts"];
+		const bySlug = new Map();
+		for(let item of collectionApi.getAll()) {
+			for(let tag of (item.data.tags || [])) {
+				if(ignored.includes(tag)) continue;
+				const slug = slugify(tag);
+				if(!bySlug.has(slug)) {
+					bySlug.set(slug, { slug, title: tag, items: new Set() });
+				}
+				bySlug.get(slug).items.add(item);
+			}
+		}
+		return Array.from(bySlug.values())
+			.map(({ slug, title, items }) => ({ slug, title, items: Array.from(items) }))
+			.sort((a, b) => a.slug.localeCompare(b.slug));
+	});
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {

@@ -6,8 +6,8 @@ description: We shoved AI into the coding phase and called it progress.
 date: 2026-06-27
 draft: false
 tags:
-  - AI SDLC
-  - Human-AI Collaboration
+  - AI Engineering
+  - Engineering Culture
   - Spec-Driven Development
 ---
 ---

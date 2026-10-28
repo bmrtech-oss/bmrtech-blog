@@ -5,9 +5,9 @@ description: How "Being Lazy" and Saving Your Answers is the Secret to Writing
 date: 2025-09-21
 draft: false
 tags:
-  - Dynamic Programming
-  - Problem-Solving
   - Algorithms
+  - Problem Solving
+  - Learning
 ---
 You've probably heard of Dynamic Programming (DP). It sounds intimidating, like something only geniuses at big tech companies understand. But what if I told you the core idea is something you already use every day? It’s the ultimate strategy for working smarter, not harder.
 

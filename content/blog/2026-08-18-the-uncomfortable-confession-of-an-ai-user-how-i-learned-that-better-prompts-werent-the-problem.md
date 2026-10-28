@@ -7,8 +7,9 @@ description: I spent a year blaming AI for deleting my code. Then I looked in
 date: 2026-08-18
 draft: false
 tags:
-  - AI Coding Assistants
+  - AI Coding
   - Prompt Engineering
+  - Career Growth
 ---
 ---
 

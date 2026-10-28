@@ -9,6 +9,8 @@ draft: false
 tags:
   - Engineering Leadership
   - Software Architecture
+  - AI Coding
+  - Career Growth
 ---
 ---
 

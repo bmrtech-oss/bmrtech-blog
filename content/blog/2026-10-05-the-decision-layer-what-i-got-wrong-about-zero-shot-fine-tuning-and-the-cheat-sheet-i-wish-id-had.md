@@ -6,10 +6,9 @@ description: I spent weeks treating every structured decision like a text
 date: 2026-10-05
 draft: false
 tags:
-  - System One Models
-  - Decision Layer
-  - Zero-Shot Classification
-  - Typesafe AI
+  - AI Engineering
+  - Machine Learning
+  - Software Architecture
 ---
 #
 

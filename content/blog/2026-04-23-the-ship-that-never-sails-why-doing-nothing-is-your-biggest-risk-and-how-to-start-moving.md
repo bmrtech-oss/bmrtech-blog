@@ -8,7 +8,7 @@ draft: false
 tags:
   - Product Development
   - Shipping Software
-  - Analysis Paralysis
+  - Engineering Leadership
 ---
 ---
 

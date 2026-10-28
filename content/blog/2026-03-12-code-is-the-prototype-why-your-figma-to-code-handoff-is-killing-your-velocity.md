@@ -7,9 +7,9 @@ description: Why the traditional Figma‑to‑code handoff is costing you 40% of
 date: 2026-03-12
 draft: false
 tags:
-  - Code‑native prototyping
-  - Figma to code handoff
-  - AI‑powered design development
+  - AI Coding
+  - Product Development
+  - Prototyping
 ---
 ## The Paradox We All Face
 

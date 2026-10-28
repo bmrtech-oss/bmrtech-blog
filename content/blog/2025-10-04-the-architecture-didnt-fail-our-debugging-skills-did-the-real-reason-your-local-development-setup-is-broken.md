@@ -6,6 +6,9 @@ description: "Is your docker-compose up failing? The problem isn't your
   "
 date: 2025-10-04
 draft: false
+tags:
+  - Software Architecture
+  - Developer Experience
 ---
 \---
 

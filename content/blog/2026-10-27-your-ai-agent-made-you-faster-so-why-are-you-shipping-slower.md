@@ -5,8 +5,9 @@ description: Your AI writes code 10x faster and your system rots 10x faster.
 date: 2026-10-27
 draft: false
 tags:
-  - Tactical AI vs Strategic AI
-  - AI coding agents
+  - AI Coding
+  - AI Agents
+  - Engineering Leadership
 ---
 ---
 

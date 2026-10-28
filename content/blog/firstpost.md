@@ -4,7 +4,7 @@ description: The Bhagavad Gita's Teachings
 date: 2025-09-01
 draft: false
 tags:
-  - "spirituality, life-lessons "
+  - Life Lessons
 ---
 Here are the life teachings and lessons derived from Shrimad Bhagavad Gita:
 

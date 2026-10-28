@@ -7,9 +7,10 @@ description: Six months after admitting better prompts weren't the problem, I
 date: 2026-09-26
 draft: false
 tags:
-  - ai agentic development
-  - ai engineering culture
-  - adlc
+  - AI Agents
+  - AI Engineering
+  - Engineering Culture
+  - ADLC
 ---
 
 

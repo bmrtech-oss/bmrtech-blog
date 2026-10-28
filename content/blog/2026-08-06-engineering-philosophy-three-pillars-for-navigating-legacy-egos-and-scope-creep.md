@@ -7,9 +7,9 @@ description: Engineering is 20% technology. 80% philosophy. A principled
 date: 2026-08-06
 draft: false
 tags:
-  - Engineering Philosophy
+  - Engineering Leadership
+  - Software Architecture
   - Stakeholder Management
-  - AI Tech Leadership
 ---
 
 ---

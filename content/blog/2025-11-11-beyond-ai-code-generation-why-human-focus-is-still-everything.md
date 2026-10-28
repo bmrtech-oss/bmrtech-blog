@@ -6,9 +6,9 @@ description: In the age of AI, the ability to think deeply is your greatest
 date: 2025-11-11
 draft: false
 tags:
-  - AI code generation
-  - human focus
-  - robust software
+  - AI Coding
+  - Software Principles
+  - Engineering Culture
 ---
 * * *
 

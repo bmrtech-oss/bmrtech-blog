@@ -6,9 +6,9 @@ description: " A practical guide to escaping over-engineering, restoring team
 date: 2026-01-06
 draft: false
 tags:
-  - team velocity
-  - engineering execution
-  - how to finish what you start
+  - Engineering Culture
+  - Product Development
+  - Engineering Leadership
 ---
 * * *
 
