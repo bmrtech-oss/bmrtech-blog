@@ -55,6 +55,11 @@ html {
 body {
 	max-width: 40em;
 }
+@media (min-width: 900px) {
+	body {
+		max-width: 50em;
+	}
+}
 
 .stats-grid {
   display: grid;
