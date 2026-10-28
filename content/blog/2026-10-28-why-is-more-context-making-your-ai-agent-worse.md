@@ -4,7 +4,7 @@ description: You gave it the whole codebase, a million-token window, and a
   retrieval pipeline. The output got worse. That's not a bug in your setup —
   it's a bug in the premise.
 date: 2026-10-28
-draft: false
+draft: true
 tags:
   - AI Coding
   - AI Agents
