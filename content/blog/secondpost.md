@@ -8,7 +8,7 @@ tags:
   - Career Growth
   - Learning
 ---
-# Art of Self Learning
+## Art of Self Learning
 
 ## **Key Lessons from Self-Teaching: Or, the Art of Learning How to Learn:**
 

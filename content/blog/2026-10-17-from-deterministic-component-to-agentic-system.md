@@ -8,8 +8,6 @@ tags:
   - AI Engineering
   - Software Architecture
 ---
-# 
-
 ---
 
 ## Why this guide exists

@@ -208,7 +208,7 @@ I don't want my codebase to become still water.
 
 ---
 
-# Engineering Team Charter
+## Engineering Team Charter
 
 ### *Living systems, lasting craft.*
 

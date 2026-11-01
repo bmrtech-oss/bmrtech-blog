@@ -1,7 +1,8 @@
 {
-	"name": "eleventy-base-blog",
-	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"name": "antinode-labs-blog",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Antinode Labs blog, built with Eleventy and deployed on Cloudflare Pages.",
 	"scripts": {
 		"dev": "npx @11ty/eleventy --serve",
 		"dev:local": "npx @11ty/eleventy --serve",
@@ -33,31 +34,29 @@
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-		"lint": "echo 'No linter configured'",
+		"lint": "node --check scripts/check-site.js && node --check scripts/build-functions.js",
+		"check": "node scripts/check-site.js",
+		"test": "npm run build && npm run check",
 		"format": "echo 'No formatter configured'",
 		"audit": "npm audit"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
-	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Antinode Labs",
+		"email": "info@antinodelabs.com",
+		"url": "https://antinodelabs.com/"
 	},
 	"license": "MIT",
 	"engines": {
 		"node": ">=20"
 	},
-	"funding": {
-		"type": "opencollective",
-		"url": "https://opencollective.com/11ty"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bmrtech-oss/bmrtech-blog.git"
 	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/bmrtech-oss/bmrtech-blog/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://antinodelabs.com/",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-img": "^3.1.1",
