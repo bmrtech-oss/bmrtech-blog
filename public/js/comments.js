@@ -134,7 +134,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const formData = {
       name: document.getElementById('authorName').value,
       email: document.getElementById('authorEmail').value,
-      content: document.getElementById('content').value
+      content: document.getElementById('content').value,
+      subscribe: document.getElementById('subscribe').checked,
+      website: document.getElementById('website').value
     };
 
     await manager.submitComment(formData);
