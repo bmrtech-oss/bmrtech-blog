@@ -1,15 +1,16 @@
 ---
 title: Why Is More Context Making Your AI Agent Worse?
-description: You gave it the whole codebase, a million-token window, and a
-  retrieval pipeline. The output got worse. That's not a bug in your setup —
-  it's a bug in the premise.
-date: 2026-10-28
-draft: true
+description: Context is what you reach for when you can't articulate what
+  matters. The alternative is harder, and it's the only thing that works.
+date: 2026-11-01
+draft: false
 tags:
   - AI Coding
   - AI Agents
   - AI Engineering
 ---
+
+
 ---
 
 "Lost in the Middle" was published in 2023 and should have ended the context-window arms race. It didn't.
@@ -17,6 +18,10 @@ tags:
 I have watched three teams since then build bigger windows anyway. The first built a retrieval pipeline that pulled the twenty most relevant files for every task. The second fed an entire service into a million-token window. The third wrote a "codebase summary" generator that regenerated a compressed map of the repo every morning.
 
 All three worked, in the narrow sense that the agent could see more. All three failed, in the sense that the quality of the output did not improve. In one case it got measurably worse, because the agent could now see everything and still didn't know what mattered.
+
+Here is what I didn't say to any of those three teams, because it would have been rude and because I only understood it later: they weren't solving a context problem. They were avoiding a specification problem.
+
+Context is what you reach for when you can't articulate what your system actually requires. It feels like engineering. It's closer to procrastination.
 
 They had solved storage. They hadn't solved judgment.
 
@@ -56,7 +61,13 @@ THE SHAPE OF A LONG CONTEXT WINDOW
   It lengthens the dark part.
 ```
 
-Read those five again and notice what they have in common. None of them are fixed by adding more context. Four of them are *caused* by adding more context. The fifth — retrieval error — gets worse, because a larger corpus has more ways to miss.
+Now step back and notice what these five have in common.
+
+They are not five technical failures. They are five forms of avoidance. Every one of them is a way of saying *figure it out* to a system that cannot figure anything out. Dilution is hoping the model picks the right needle from a bigger haystack. Contradiction is hoping it guesses which version you meant. Staleness is hoping nothing changed. Retrieval error is hoping the right file was in the top twenty. Attention decay is hoping the middle of the window works anyway.
+
+None of that is strategy. It's a prayer with extra steps.
+
+The alternative — writing down what must be true — requires you to know what must be true. That's harder. That's the point.
 
 Context is a pile of facts the agent must reason over. That's work. What an agent actually needs is a constraint it must satisfy. That's a fence.
 
@@ -103,15 +114,13 @@ The first is an unbounded object. The second is a bounded task.
 
 Five things have to be true of a good axiom set:
 
-
 | Property | Meaning | What breaks if violated |
-| ---------------- | ----------------------------------- | --------------------------------- |
+|---|---|---|
 | **Soundness** | Satisfying them guarantees the goal | Ships defects with confidence |
 | **Independence** | None derivable from the rest | Redundancy, false confidence |
 | **Checkability** | Mechanically verifiable | It's a wish, not an axiom |
 | **Sufficiency** | They *permit* the goal state | Safe but useless |
 | **Stability** | Still true as the world moves | Drift: axioms fine, world changed |
-
 
 Soundness first, sufficiency second. A sound-but-incomplete system is safe and occasionally refuses valid work. An unsound system is confident and ships bugs. Never trade soundness for coverage.
 
@@ -122,6 +131,14 @@ And then the failure mode nobody names: **axioms that aren't axioms.**
 An uncheckable axiom is worse than no axiom, because it buys the feeling of rigor without the substance. And it's the thing most teams write when they think they're writing a spec.
 
 *List the invariants of your current system. Not the features. The properties that must never be false. If you can't list five in five minutes, your agent has nothing to satisfy — and it's inventing its own laws instead.*
+
+Here is the uncomfortable implication, and it's the one most teams avoid. If you cannot write twelve checkable invariants for your system, it is not because twelve is an unreasonable number. It is because you do not understand your system well enough to say what it requires.
+
+You are hoping the model understands it for you.
+
+That is not delegation. It is abdication.
+
+One honest qualification, so this doesn't overreach. Some properties genuinely resist formalisation — usability, product judgment, whether the thing should exist at all. Those are addressed further down, and they are real. But almost no team is near that boundary. The things going unspecified in most codebases are entirely specifiable: contracts, idempotency, ownership, ordering, failure modes. The hard cases are not why the specification is missing. They are the reason people give for not starting.
 
 ---
 
@@ -135,7 +152,9 @@ The **order of justification** is deductive: you have the law, and you derive ch
 
 Quality lives in keeping the two in a loop. Discovery without justification is a pile of anecdotes. Justification without discovery is a law book that has stopped describing the world.
 
-Here is the one refinement Atkinson needs for engineering. He calls axioms **self-evident**. In software they are not. They are chosen, and they can be wrong. The deadlock nobody specified, the contract nobody wrote down, the drift nobody anticipated — those are cases where the axiom set was unsound, and no amount of correct deduction saved the system. Which is exactly why the inductive half is not optional. It is how you find out which law you forgot.
+Here is the one refinement Atkinson needs for engineering. He calls axioms **self-evident**. In software they are not. They are chosen, and they can be wrong. The deadlock nobody specified, the contract nobody wrote down, the drift nobody anticipated — those are cases where the axiom set was unsound, and no amount of correct deduction saved the system.
+
+The reason most teams run only the deductive half is not ignorance. It is ego. The inductive half requires you to admit the system surprised you — that a failure taught you something you should have known, that the law you were confident about was wrong. That admission is expensive. So teams skip it, and their axiom sets slowly become fiction: well-formed, internally consistent, and no longer describing the world.
 
 An agent is a deduction engine. It is very good at deriving consequences from premises. It cannot choose its own premises, and it cannot notice when they've stopped being true. That is the human's job, and it is not a small one.
 
@@ -205,7 +224,7 @@ None of this argues for more context. All of it argues for fewer, better laws, m
 
 ---
 
-## What This Means for Your Agent
+## What Your Agent Would Do Tomorrow
 
 Do not give the agent more context. Give it fewer, truer laws.
 
@@ -215,17 +234,16 @@ The move is the same one good engineers have always made: replace a hard global 
 
 Context is what you reach for when you don't have invariants. Invariants are what you reach for when you understand the problem.
 
----
+So here is the test that matters.
 
-## The Law You Forgot
+If your agent had to make a decision tomorrow that you hadn't specified — a shape change, an interface tweak, an assumption about a consumer two repos away — would it make the right one?
 
-Every system has one — the property that was true, that nobody wrote down, that got broken.
+If you can't answer that with confidence, you don't have a specification. You have a hope.
 
-For the settlement export, it was *"the row is a tuple, and downstream parses by position."* True for six years. Never documented, because it never needed to be. Broken in an afternoon by an agent making a reasonable improvement.
+The difference between a hope and a specification is the difference between a system that fails loudly and one that fails silently. Three days later. In Europe. In a reconciliation report nobody reads until the numbers don't add up.
 
-That is the axiom you were missing. And the uncomfortable thing about axioms you were missing is that you usually find out from production.
-
-So write it down. Then notice the next problem, which is harder: an invariant on a wiki page is a wish. It only becomes a fence when the agent can find it and the pipeline can check it. Where it lives, what it constrains, and how it's verified — that's the spec, and that's the next post.
+Write it down. Then notice the next problem, which is harder: an invariant on a wiki page is a wish. It only becomes a fence when the agent can find it and the pipeline can check it. Where it lives, what it constrains, and how it's verified — that's the spec, and that's the next post.
 
 ---
 
+*Next: why an invariant the agent can't find is worth nothing — and what an agent-ready spec actually looks like.*
