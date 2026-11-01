@@ -247,6 +247,13 @@ header {
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
 }
+.postlist-description {
+	flex-basis: 100%;
+	margin: 0.25rem 0 0;
+	padding-left: .25em;
+	font-size: 0.95em;
+	color: var(--color-gray-90);
+}
 .postlist-item-active .postlist-link {
 	font-weight: bold;
 }
