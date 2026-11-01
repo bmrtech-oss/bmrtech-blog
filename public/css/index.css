@@ -172,6 +172,27 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
+/* Keep ASCII diagrams intact on narrow screens: scroll instead of wrapping */
+pre {
+	overflow-x: auto;
+	white-space: pre;
+	word-break: normal;
+	overflow-wrap: normal;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+pre code {
+	white-space: inherit;
+	word-break: normal;
+	overflow-wrap: normal;
+}
+@media (max-width: 600px) {
+	pre:not([class*="language-"]),
+	pre[class*="language-"] {
+		font-size: 0.72rem;
+		line-height: 1.3;
+	}
+}
 
 /* Header */
 header {
