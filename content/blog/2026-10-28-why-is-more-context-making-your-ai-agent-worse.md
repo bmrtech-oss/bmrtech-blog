@@ -46,19 +46,20 @@ Here is the shape they measured, with your invariants sitting where they usually
 ```text
 THE SHAPE OF A LONG CONTEXT WINDOW
 
-  ┌──────────────┬─────────────────────────────────┬──────────────┐
-  │  BEGINNING   │             MIDDLE              │     END      │
-  │              │                                 │              │
-  │ ████████████ │  ███    ██    █    ██    ███    │ ████████████ │
-  │  high use    │      attention decays here      │  high use    │
-  └──────────────┴─────────────────────────────────┴──────────────┘
-        ↑                        ↑                        ↑
-   the task spec         the contract you wrote      the latest
-   the invariants        last quarter                error message
-   the non-goals                                     the stack trace
++-----------+-------------------+-----------+
+| BEGINNING |      MIDDLE       |    END    |
+|           |                   |           |
+| ######### | ##   #   #   ##   | ######### |
+| high use  | attention decays  | high use  |
++-----------+-------------------+-----------+
+      ^               ^               ^
+      |               |               |
+ task spec      the contract      latest
+ invariants     you wrote         error message
+ non-goals      last quarter      stack trace
 
-  A bigger window does not flatten this curve.
-  It lengthens the dark part.
+A bigger window does not flatten this curve.
+It lengthens the dark part.
 ```
 
 Now step back and notice what these five have in common.
@@ -96,18 +97,32 @@ An axiom is a proposition from which consequences can be derived and checked. Th
 This is the compression that makes a bounded reasoner useful. You cannot hand an agent 500,000 lines and ask it to understand. You can hand it twelve properties that must never be false, and ask it to prove they hold. Here's what that substitution looks like:
 
 ```text
-                  WHAT AN INVARIANT SET REPLACES
+WHAT AN INVARIANT SET REPLACES
 
-  ┌───────────────────┐        ┌──────────────┐        ┌───────────────┐
-  │   THE CODEBASE    │ ─────► │  INVARIANTS  │ ─────► │    CHECKS     │
-  │                   │ choose │              │ derive │               │
-  │  500,000 lines    │  the   │  12 laws     │  the   │  property     │
-  │  40 services      │  laws  │  that must   │ conse- │  contract     │
-  │  unknowable by    │        │  never be    │ quences│  schema       │
-  │  any one agent    │        │  false       │        │  replay       │
-  └───────────────────┘        └──────────────┘        └───────────────┘
-      unbounded                 compressible            checkable
-      object                    to a page               by machine
++-----------------------------+
+| THE CODEBASE                |
+| 500,000 lines, 40 services  |
+| unknowable by any one agent |
+| (unbounded)                 |
++-----------------------------+
+               |
+               | choose the laws
+               v
++-----------------------------+
+| INVARIANTS                  |
+| 12 laws that must never be  |
+| false (compressible to a    |
+| page)                       |
++-----------------------------+
+               |
+               | derive the consequences
+               v
++-----------------------------+
+| CHECKS                      |
+| property, contract, schema, |
+| replay (checkable by        |
+| machine)                    |
++-----------------------------+
 ```
 
 The first is an unbounded object. The second is a bounded task.
@@ -171,20 +186,27 @@ An agent was asked to add a field. It did. It also changed the row from a tuple 
 Here's the change, side by side:
 
 ```text
-BEFORE  (2019 – 2025)                   AFTER  (agent, Tuesday)
+BEFORE (2019 - 2025)
 
-row = ("M-4471",                        row = {
-         "2025-06-03",                        "merchant":     "M-4471",
-        18432,                               "date":         "2025-06-03",
-        "EUR")                               "amount_cents": 18432,
-                                             "currency":     "EUR"
-reconciliation-service:                  }
-parses by POSITION                       reconciliation-service:
-  row[2] → 18432  ✓                      parses by POSITION
-                                           row[2] → "2025-06-03"  ✗
+  row = ("M-4471", "2025-06-03", 18432, "EUR")
 
-  Locally correct.  More legible.  Nothing in the task
-  mentioned the consumer.  The contract was never written.
+  reconciliation-service parses by POSITION:
+    row[2] -> 18432             OK
+
+AFTER (agent, Tuesday)
+
+  row = {
+    "merchant":     "M-4471",
+    "date":         "2025-06-03",
+    "amount_cents": 18432,
+    "currency":     "EUR"
+  }
+
+  reconciliation-service parses by POSITION:
+    row[2] -> "2025-06-03"      WRONG
+
+Locally correct. More legible. Nothing in the task
+mentioned the consumer. The contract was never written.
 ```
 
 Three days later, European merchants started showing mismatched totals.
