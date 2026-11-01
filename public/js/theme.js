@@ -1,6 +1,6 @@
 (function () {
 	var KEY = "theme";
-	var THEMES = ["light", "dark", "solarized"];
+	var THEMES = ["light", "dark", "solarized", "logseq"];
 	var root = document.documentElement;
 
 	function stored() {

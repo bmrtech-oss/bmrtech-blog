@@ -88,7 +88,51 @@
 	--heading-color: #073642;
 }
 
-/* Theme switcher: one icon button that cycles light -> dark -> solarized */
+/* Logseq: deep green dark theme */
+:root[data-theme="logseq"] {
+	color-scheme: dark;
+
+	--color-gray-20: #4a6b62;
+	--color-gray-50: #5f8277;
+	--color-gray-90: #b7cfc6;
+	--text-color-link: #6fe0b0;
+	--text-color-link-active: #a8f0d0;
+	--text-color-link-visited: #9ccfb9;
+	--background-color: #0e2622;
+	--message-box-bg: #153630;
+	--table-border: rgba(183, 207, 198, 0.2);
+	--table-hover: rgba(183, 207, 198, 0.06);
+
+	--text-color: #d2e5dd;
+	--text-muted: #9fbbb0;
+	--bg-color: #0e2622;
+	--card-bg: #153630;
+	--border-color: #24493f;
+	--input-bg: #0b1f1c;
+	--input-text: #e4f2ec;
+	--input-border: #3a6155;
+	--focus-color: #6fe0b0;
+	--focus-shadow: rgba(111, 224, 176, 0.25);
+	--accent-color: #6fe0b0;
+	--button-bg: #3fbf8a;
+	--button-text: #07211b;
+	--button-hover: #5fd3a2;
+	--button-disabled-bg: #2c4a41;
+	--button-disabled-text: #7a9a8e;
+	--like-bg: #2a2020;
+	--like-text: #ff8a80;
+	--like-border: #5a3434;
+	--like-hover-bg: #3a2626;
+	--like-hover-border: #ff8a80;
+	--like-count-bg: #ff8a80;
+	--like-count-text: #2a1010;
+	--secondary-button-bg: #2c4a41;
+	--secondary-button-text: #d2e5dd;
+	--secondary-button-hover: #3a6155;
+	--heading-color: #eaf6f1;
+}
+
+/* Theme switcher: one icon button that cycles light -> dark -> solarized -> logseq */
 a[href].social-link {
 	margin-left: auto;
 	display: inline-flex;
@@ -156,7 +200,8 @@ a[href].email-link:focus-visible {
 }
 :root[data-theme="light"] .theme-toggle .icon-light,
 :root[data-theme="dark"] .theme-toggle .icon-dark,
-:root[data-theme="solarized"] .theme-toggle .icon-solarized {
+:root[data-theme="solarized"] .theme-toggle .icon-solarized,
+:root[data-theme="logseq"] .theme-toggle .icon-logseq {
 	display: block;
 }
 /* Related posts */
