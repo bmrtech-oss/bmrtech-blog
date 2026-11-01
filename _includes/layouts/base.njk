@@ -12,7 +12,8 @@
 		{%- set pageTitle = title or metadata.title %}
 		{%- set pageDescription = description or metadata.description %}
 		{%- set pageUrl = page.url | htmlBaseUrl(metadata.url) %}
-		{%- set pageImage = (image or "/img/og-banner.jpg") | htmlBaseUrl(metadata.url) %}
+		{%- set defaultImage = ("/img/og/" + page.fileSlug + ".png") if layout == 'layouts/post.njk' else "/img/og-banner.jpg" %}
+		{%- set pageImage = (image or defaultImage) | htmlBaseUrl(metadata.url) %}
 		<link rel="canonical" href="{{ pageUrl }}">
 
 		<meta property="og:site_name" content="{{ metadata.title }}">

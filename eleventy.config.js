@@ -13,6 +13,7 @@ const path = require("node:path");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
+const pluginOgImages = require("./eleventy.config.og.js");
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -35,6 +36,7 @@ module.exports = function(eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
+	eleventyConfig.addPlugin(pluginOgImages);
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);

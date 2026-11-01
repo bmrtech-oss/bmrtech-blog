@@ -197,7 +197,19 @@ if (isProduction) {
         async handlePostSubscribe(options) {
             try {
                 const data = await this.parseJsonBody(options.body);
-                
+
+                // Token-based management (mirrors functions/api/subscribe.js)
+                if (data.token) {
+                    this.mockSubscribed = data.action === 'status'
+                        ? (this.mockSubscribed ?? true)
+                        : data.action === 'resubscribe';
+                    return this.createResponse(200, {
+                        success: true,
+                        subscribed: this.mockSubscribed,
+                        message: this.mockSubscribed ? 'You are subscribed again.' : 'You have been unsubscribed.'
+                    });
+                }
+                 
                 if (!data.email) {
                     return this.createResponse(400, { error: 'Email is required' });
                 }

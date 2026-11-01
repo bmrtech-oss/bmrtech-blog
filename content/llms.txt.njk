@@ -1,0 +1,19 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title }}
+
+> {{ metadata.description | safe }}
+
+Engineering essays on AI coding agents, software architecture and engineering practice. Every post is plain HTML with its text in the page source. Feeds: {{ "/feed/feed.xml" | htmlBaseUrl(metadata.url) }} (Atom) and {{ "/feed/feed.json" | htmlBaseUrl(metadata.url) }} (JSON).
+
+## Posts
+{% for post in collections.posts | reverse %}
+- [{{ post.data.title | safe }}]({{ post.url | htmlBaseUrl(metadata.url) }}){% if post.data.description %}: {{ post.data.description | trim | safe }}{% endif %}
+{%- endfor %}
+
+## Site
+- [About]({{ "/about/" | htmlBaseUrl(metadata.url) }})
+- [All tags]({{ "/tags/" | htmlBaseUrl(metadata.url) }})
+- [Sitemap]({{ "/sitemap.xml" | htmlBaseUrl(metadata.url) }})

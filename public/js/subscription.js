@@ -1,69 +1,46 @@
+// Subscription management for links like /blog/some-post/?token=<32 hex chars>
+// (the link is meant to be included in emails). Without a valid token nothing is shown.
 class SubscriptionManager {
   constructor() {
     this.API_BASE = '/api';
-    this.currentEmail = null;
+    this.token = null;
   }
 
   async init() {
-    this.checkUrlForEmail();
+    const token = new URLSearchParams(window.location.search).get('token');
+    if (!token || !/^[a-f0-9]{32}$/i.test(token)) return;
+
+    this.token = token;
     this.setupEventListeners();
+    await this.loadSubscriptionStatus();
   }
 
-  checkUrlForEmail() {
-    // Check if email is in URL parameters (for unsubscribe links)
-    const urlParams = new URLSearchParams(window.location.search);
-    const email = urlParams.get('email');
-    
-    if (email) {
-      this.currentEmail = email;
-      this.showSubscriptionManagement();
-      this.loadSubscriptionStatus();
-    }
+  async request(action) {
+    const response = await fetch(`${this.API_BASE}/subscribe`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: this.token, action })
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || 'Request failed');
+    return result;
   }
 
   async loadSubscriptionStatus() {
-    if (!this.currentEmail) return;
-
     try {
-      const response = await fetch(`${this.API_BASE}/author/${encodeURIComponent(this.currentEmail)}`);
-      if (response.ok) {
-        const author = await response.json();
-        this.updateSubscriptionUI(author.subscribed);
-      }
+      const result = await this.request('status');
+      this.showSubscriptionManagement();
+      this.updateSubscriptionUI(result.subscribed);
     } catch (error) {
       console.error('Error loading subscription status:', error);
     }
   }
 
   async manageSubscription(action) {
-    if (!this.currentEmail) {
-      this.showNotification('Please submit a comment first to manage subscriptions', 'error');
-      return;
-    }
-
     try {
-      const response = await fetch(`${this.API_BASE}/subscribe`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: this.currentEmail,
-          action: action
-        })
-      });
-
-      const result = await response.json();
-      
-      if (response.ok) {
-        this.showNotification(result.message, 'success');
-        this.updateSubscriptionUI(action === 'subscribe');
-        
-        // Update URL if unsubscribing
-        if (action === 'unsubscribe') {
-          this.updateUrlWithEmail();
-        }
-      } else {
-        throw new Error(result.error);
-      }
+      const result = await this.request(action);
+      this.showNotification(result.message, 'success');
+      this.updateSubscriptionUI(result.subscribed);
     } catch (error) {
       this.showNotification('Error managing subscription: ' + error.message, 'error');
     }
@@ -88,72 +65,41 @@ class SubscriptionManager {
       resubscribeBtn.style.display = isSubscribed ? 'none' : 'block';
     }
     if (statusDiv) {
-      statusDiv.textContent = isSubscribed ? 
-        'You are subscribed to email notifications.' : 
+      statusDiv.textContent = isSubscribed ?
+        'You are subscribed to email notifications.' :
         'You are unsubscribed from email notifications.';
     }
   }
 
-  updateUrlWithEmail() {
-    if (this.currentEmail) {
-      const url = new URL(window.location);
-      url.searchParams.set('email', this.currentEmail);
-      window.history.replaceState({}, '', url);
-    }
-  }
-
   setupEventListeners() {
-    // Comment form success handler
-    document.addEventListener('commentSubmitted', (event) => {
-      this.currentEmail = event.detail.email;
-      this.showSubscriptionManagement();
-      this.updateSubscriptionUI(true);
-    });
-
-    // Subscription buttons
     const unsubscribeBtn = document.getElementById('unsubscribe-btn');
     const resubscribeBtn = document.getElementById('resubscribe-btn');
 
     if (unsubscribeBtn) {
-      unsubscribeBtn.addEventListener('click', () => {
-        this.manageSubscription('unsubscribe');
-      });
+      unsubscribeBtn.addEventListener('click', () => this.manageSubscription('unsubscribe'));
     }
-
     if (resubscribeBtn) {
-      resubscribeBtn.addEventListener('click', () => {
-        this.manageSubscription('subscribe');
-      });
+      resubscribeBtn.addEventListener('click', () => this.manageSubscription('resubscribe'));
     }
   }
 
   showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `fixed top-4 right-4 p-3 rounded-md text-sm z-50 ${
-      type === 'success' ? 'bg-green-100 text-green-800 border border-green-200' : 
-      type === 'error' ? 'bg-red-100 text-red-800 border border-red-200' : 
+      type === 'success' ? 'bg-green-100 text-green-800 border border-green-200' :
+      type === 'error' ? 'bg-red-100 text-red-800 border border-red-200' :
       'bg-blue-100 text-blue-800 border border-blue-200'
     }`;
     notification.textContent = message;
-    
+
     document.body.appendChild(notification);
-    
+
     setTimeout(() => {
       notification.remove();
     }, 5000);
   }
 }
 
-// Initialize subscription management
 document.addEventListener('DOMContentLoaded', function() {
-  const subscriptionManager = new SubscriptionManager();
-  subscriptionManager.init();
+  new SubscriptionManager().init();
 });
-
-// Custom event for comment submission success
-class CommentSubmittedEvent extends Event {
-  constructor(email) {
-    super('commentSubmitted');
-    this.detail = { email };
-  }
-}

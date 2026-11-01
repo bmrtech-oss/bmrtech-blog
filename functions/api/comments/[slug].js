@@ -70,13 +70,14 @@ export async function onRequestPost(context) {
       return json({ error: 'Comment must be 1-2000 characters' }, 400);
     }
 
-    // Insert or get author; never un-subscribe an existing author from here
+    // Insert or get author. Existing authors keep their current subscription
+    // state; only the token-based link can change it.
     const authorResult = await env.BLOG_DB.prepare(`
       INSERT INTO authors (email, name, subscribed, subscription_token)
       VALUES (?, ?, ?, hex(randomblob(16)))
       ON CONFLICT(email) DO UPDATE SET
         name = excluded.name,
-        subscribed = CASE WHEN excluded.subscribed = 1 THEN 1 ELSE authors.subscribed END
+        subscription_token = COALESCE(authors.subscription_token, excluded.subscription_token)
       RETURNING id
     `).bind(email, name, subscribe).run();
 
