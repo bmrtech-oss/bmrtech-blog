@@ -1,4 +1,5 @@
 ---
+startHere: 2
 title: Your AI Isn't Broken. Your SDLC Is.
 description: We shoved AI into the coding phase and called it progress.
   Meanwhile, design, testing, and operations are still running on 1990s logic.

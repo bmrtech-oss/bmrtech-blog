@@ -4,6 +4,8 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+<div id="reading-progress" aria-hidden="true"></div>
+<article class="post-article">
 <h1 data-pagefind-meta="title">{{ title }}</h1>
 {%- if description %}
 <p class="post-description">{{ description | trim }}</p>
@@ -33,6 +35,9 @@ layout: layouts/base.njk
 <div data-pagefind-body>
 	{{ content | safe }}
 </div>
+
+{% set signupId = "post" %}
+{% include "signup.njk" %}
 
 {%- set related = collections.posts | relatedPosts(page, tags) %}
 {%- if related.length %}
@@ -66,3 +71,4 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+</article>

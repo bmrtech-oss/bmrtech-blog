@@ -5,24 +5,26 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 6
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<section class="hero">
+	<p class="hero-kicker">Antinode Labs</p>
+	<h1>Engineering Beyond Peak.</h1>
+	<p class="hero-lead">Don't just reach maximum amplitude, engineer what comes after. Essays on AI coding agents, software architecture and the craft of shipping.</p>
+	{% set signupId = "home" %}
+	{% include "signup.njk" %}
+</section>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
-
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
+<h2 class="section-title">Latest posts</h2>
+{% set latest = collections.posts | head(-1 * numberOfLatestPostsToShow) | reverse %}
+<ul class="cards">
+{%- for post in latest %}
+	{%- set featured = loop.first %}
+	{% include "postcard.njk" %}
+{%- endfor %}
 </ul>
-#}
+
+{% set postsCount = collections.posts | length %}
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+<p class="more-link">
+	{%- if morePosts > 0 %}{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/blog/">the archive</a>. {% endif %}
+	New here? <a href="/start-here/">Start here</a>.
+</p>

@@ -1,4 +1,5 @@
 ---
+startHere: 5
 title: Why Is More Context Making Your AI Agent Worse?
 description: Context is what you reach for when you can't articulate what
   matters. The alternative is harder, and it's the only thing that works.

@@ -1,4 +1,5 @@
 ---
+startHere: 3
 title: "The Half-Built House: Why Software Teams Start But Never Finish (And How
   to Stop)"
 description: " A practical guide to escaping over-engineering, restoring team

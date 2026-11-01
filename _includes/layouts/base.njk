@@ -71,6 +71,7 @@
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
 		{%- css %}{% include "public/css/components.css" %}{% endcss %}
 		{%- css %}{% include "public/css/themes.css" %}{% endcss %}
+		{%- css %}{% include "public/css/ui.css" %}{% endcss %}
 		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
@@ -122,5 +123,6 @@
 		<script src="/js/subscription.js"></script> #}
 		{%- if eleventy.env.runMode == "serve" %}<script src="/js/mock-api.js"></script>{% endif %}
 		<script src="/js/home-stats.js"></script>
+		<script src="/js/ui.js" defer></script>
 	</body>
 </html>

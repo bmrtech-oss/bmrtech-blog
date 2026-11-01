@@ -2,9 +2,12 @@
 layout: layouts/home.njk
 eleventyNavigation:
   key: Archive
-  order: 2
+  order: 3
 ---
 <h1>Archive</h1>
 
-{% set postslist = collections.posts %}
+{% for group in collections.postsByYear %}
+<h2 class="year-heading">{{ group.year }}</h2>
+{% set postslist = group.posts %}
 {% include "postslist.njk" %}
+{% endfor %}

@@ -1,0 +1,18 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Start here
+  order: 2
+---
+<h1>Start here</h1>
+<p class="hero-lead">New to Antinode Labs? These posts give the clearest picture of how we think about AI agents and engineering. Read them in order.</p>
+
+<ol class="cards" style="list-style:none">
+{%- for post in collections.startHere %}
+	{%- set number = loop.index %}
+	{%- set featured = false %}
+	{% include "postcard.njk" %}
+{%- endfor %}
+</ol>
+
+<p class="more-link">Looking for more? Browse <a href="/blog/">the archive</a> or <a href="/tags/">all tags</a>.</p>

@@ -1,4 +1,5 @@
 ---
+startHere: 4
 title: "The ADLC: What I Got Wrong About Agents, Entropy, and the Code I
   Couldn't Read"
 description: Six months after admitting better prompts weren't the problem, I

@@ -1,4 +1,5 @@
 ---
+startHere: 1
 title: "The Five Levels of AI Coding Agents: A Practical Rating -  From
   Autocomplete to “Just Ship It”"
 description: A personal take on AI coding tools—from Copilot’s autocomplete to

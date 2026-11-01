@@ -1,0 +1,15 @@
+<section class="signup" aria-labelledby="signup-title-{{ signupId or 'main' }}">
+	<h2 id="signup-title-{{ signupId or 'main' }}">Get new posts by email</h2>
+	<p>Essays on AI coding agents and engineering practice. No spam, unsubscribe anytime.</p>
+	<form class="signup-form" novalidate>
+		<div class="signup-row">
+			<label class="visually-hidden" for="signup-email-{{ signupId or 'main' }}">Email address</label>
+			<input type="email" id="signup-email-{{ signupId or 'main' }}" name="email" placeholder="you@example.com" autocomplete="email" required>
+			<button type="submit">Subscribe</button>
+		</div>
+		<div class="signup-hp" aria-hidden="true">
+			<label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+		</div>
+		<div class="signup-status" role="status" aria-live="polite"></div>
+	</form>
+</section>

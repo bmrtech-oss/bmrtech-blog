@@ -109,6 +109,24 @@ module.exports = function(eleventyConfig) {
 			.sort((a, b) => a.slug.localeCompare(b.slug));
 	});
 
+	// Posts grouped by year, newest year first, newest post first within a year
+	eleventyConfig.addCollection("postsByYear", collectionApi => {
+		const byYear = new Map();
+		for(let post of collectionApi.getFilteredByTag("posts").reverse()) {
+			const year = post.date.getUTCFullYear();
+			if(!byYear.has(year)) byYear.set(year, []);
+			byYear.get(year).push(post);
+		}
+		return Array.from(byYear, ([year, posts]) => ({ year, posts: posts.slice().reverse() }));
+	});
+
+	// Posts with `startHere: <number>` in front matter, in that order
+	eleventyConfig.addCollection("startHere", collectionApi => {
+		return collectionApi.getFilteredByTag("posts")
+			.filter(post => post.data.startHere)
+			.sort((a, b) => a.data.startHere - b.data.startHere);
+	});
+
 	// Estimated reading time in minutes for rendered post HTML
 	eleventyConfig.addFilter("readingTime", html => {
 		const words = String(html || "").replace(/<[^>]*>/g, " ").split(/\s+/).filter(Boolean).length;

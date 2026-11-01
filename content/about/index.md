@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 eleventyNavigation:
   key: About Us
-  order: 3
+  order: 4
 ---
 # **About Antinode Labs**
 
