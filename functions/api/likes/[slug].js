@@ -1,28 +1,42 @@
+const SLUG_RE = /^[a-z0-9-]{1,200}$/i;
+const SITE_ORIGINS = ['https://antinodelabs.com', 'https://www.antinodelabs.com'];
+
+const json = (body, status = 200) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'Content-Type': 'application/json' },
+  });
+
 export async function onRequestGet(context) {
   const { env, params } = context;
   const { slug } = params;
+
+  if (!SLUG_RE.test(slug)) return json({ count: 0 });
 
   try {
     const result = await env.BLOG_DB.prepare(`
       SELECT count FROM likes WHERE post_slug = ?
     `).bind(slug).first();
 
-    const count = result ? result.count : 0;
-    
-    return new Response(JSON.stringify({ count }), {
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return json({ count: result ? result.count : 0 });
   } catch (error) {
     console.error('Likes API Error:', error);
-    return new Response(JSON.stringify({ count: 0 }), {
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return json({ count: 0 });
   }
 }
 
 export async function onRequestPost(context) {
-  const { env, params } = context;
+  const { request, env, params } = context;
   const { slug } = params;
+
+  if (!SLUG_RE.test(slug)) return json({ error: 'Invalid post' }, 400);
+
+  // Reject cross-site posts; browsers always send Origin on POST (localhost allowed for dev)
+  const origin = request.headers.get('Origin') || '';
+  const isLocal = /^http:\/\/localhost(:\d+)?$/.test(origin);
+  if (!SITE_ORIGINS.includes(origin) && !isLocal) {
+    return json({ error: 'Forbidden' }, 403);
+  }
 
   try {
     // Upsert like count
@@ -38,14 +52,9 @@ export async function onRequestPost(context) {
       SELECT count FROM likes WHERE post_slug = ?
     `).bind(slug).first();
 
-    return new Response(JSON.stringify({ count: result.count }), {
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return json({ count: result.count });
   } catch (error) {
     console.error('Like API Error:', error);
-    return new Response(JSON.stringify({ error: 'Failed to like post' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return json({ error: 'Failed to like post' }, 500);
   }
 }
