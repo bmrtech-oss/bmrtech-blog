@@ -36,7 +36,12 @@ layout: layouts/base.njk
 	{{ content | safe }}
 </div>
 
-{% include "share.njk" %}
+{# Set slug for likes/comments components #}
+{% set slug = page.fileSlug %}
+<div class="post-actions">
+	{% include "likes.njk" %}
+	{% include "share.njk" %}
+</div>
 
 {% set signupId = "post" %}
 {% include "signup.njk" %}
@@ -52,10 +57,6 @@ layout: layouts/base.njk
 	</ul>
 </section>
 {%- endif %}
-{# Set slug for likes/comments components #}
-{% set slug = page.fileSlug %}
-<!-- Add likes component -->
-{% include "likes.njk" %}
 
 <!-- Add comments component -->
 {% include "comments.njk" %}

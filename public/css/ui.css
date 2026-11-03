@@ -482,15 +482,29 @@ a[href].tag-pill:hover {
 	border-bottom: 1px solid var(--line);
 }
 
+/* Like + share row */
+.post-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem 1.25rem;
+	margin: 2rem 0 0;
+	padding-top: 1rem;
+	border-top: 1px solid var(--line);
+}
+.post-actions .likes,
+.post-actions .share {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 /* Share links */
 .share {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 0.5rem;
-	margin: 2rem 0 0;
-	padding-top: 1rem;
-	border-top: 1px solid var(--line);
 	font-family: var(--font-ui);
 }
 .share[hidden],
