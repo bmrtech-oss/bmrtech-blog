@@ -11,6 +11,7 @@ numberOfLatestPostsToShow: 6
 	<p class="hero-lead">Don't just reach maximum amplitude, engineer what comes after. Essays on AI coding agents, software architecture and the craft of shipping.</p>
 	{% set signupId = "home" %}
 	{% include "signup.njk" %}
+	<p class="hero-note">New here? <a href="/start-here/">Start with the essential reads &rarr;</a></p>
 </section>
 
 <h2 class="section-title">Latest posts</h2>
@@ -25,6 +26,5 @@ numberOfLatestPostsToShow: 6
 {% set postsCount = collections.posts | length %}
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 <p class="more-link">
-	{%- if morePosts > 0 %}{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/blog/">the archive</a>. {% endif %}
-	New here? <a href="/start-here/">Start here</a>.
+	{%- if morePosts > 0 %}{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} in <a href="/blog/">the archive</a>.{% endif %}
 </p>

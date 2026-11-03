@@ -316,6 +316,11 @@ header {
 	color: var(--text-muted, var(--color-gray-90));
 	margin: 0 0 1.25rem;
 }
+.hero-note {
+	margin: -1rem 0 0;
+	font: 0.9rem var(--font-ui);
+	color: var(--text-muted, var(--color-gray-90));
+}
 .section-title {
 	font-size: 0.85rem;
 	letter-spacing: 0.12em;
