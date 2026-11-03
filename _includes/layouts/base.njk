@@ -99,7 +99,7 @@
 
 			<form class="header-search" role="search" action="/search/" method="get">
 				<label class="visually-hidden" for="header-search-input">Search posts</label>
-				<input id="header-search-input" type="search" name="q" placeholder="Search&hellip;" autocomplete="off" required>
+				<input id="header-search-input" type="search" name="q" placeholder="Search&hellip;" title="Search (press /)" autocomplete="off" required>
 			</form>
 
 			<a href="{{ metadata.author.follow }}" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" title="Follow us on X">
@@ -130,5 +130,6 @@
 		{%- if eleventy.env.runMode == "serve" %}<script src="/js/mock-api.js"></script>{% endif %}
 		<script src="/js/home-stats.js"></script>
 		<script src="/js/ui.js" defer></script>
+		<script src="/js/search.js" defer></script>
 	</body>
 </html>

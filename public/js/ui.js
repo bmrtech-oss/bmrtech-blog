@@ -97,17 +97,6 @@
 		});
 	});
 
-	document.addEventListener("keydown", function (event) {
-		var t = event.target;
-		var typing = t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName));
-		if (event.key !== "/" || typing || event.ctrlKey || event.metaKey || event.altKey) return;
-		var input = document.getElementById("header-search-input");
-		if (input) {
-			event.preventDefault();
-			input.focus();
-		}
-	});
-
 	document.querySelectorAll("form.signup-form").forEach(function (form) {
 		var status = form.querySelector(".signup-status");
 		var button = form.querySelector('button[type="submit"]');

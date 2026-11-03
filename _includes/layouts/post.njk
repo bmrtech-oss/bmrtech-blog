@@ -33,6 +33,8 @@ layout: layouts/base.njk
 {%- endif %}
 
 <div data-pagefind-body>
+	<span data-pagefind-meta="date[data-d]" data-d="{{ page.date | htmlDateString }}"></span>
+	{%- for tag in tags | filterTagList %}<span data-pagefind-filter="tag[data-t]" data-t="{{ tag }}"></span>{% endfor %}
 	{{ content | safe }}
 </div>
 
