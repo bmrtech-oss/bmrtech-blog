@@ -813,29 +813,19 @@ html.search-open {
 /* Mobile polish */
 @media (max-width: 640px) {
 	.header-search {
-		order: 4;
-		width: 100%;
-		height: auto;
+		order: 0;
 		margin-left: 0;
 	}
-	.header-search input,
 	.header-search input:focus {
-		position: static;
-		display: block;
-		width: 100%;
-		height: 2.5rem;
-		padding: 0 0.9rem 0 2.2rem;
-		background-position: 0.65rem center;
-		cursor: text;
-	}
-	.header-search input::placeholder {
-		color: var(--text-muted, var(--color-gray-90));
+		width: 2.25rem;
+		padding: 0;
+		background-position: center;
 	}
 	nav {
 		min-width: 0;
 	}
 	header {
-		gap: 0.5rem;
+		gap: 0.5rem 0.4rem;
 	}
 	.home-link {
 		margin-right: auto;
@@ -858,8 +848,8 @@ html.search-open {
 	a[href].social-link,
 	a[href].email-link,
 	.theme-toggle {
-		width: 2.75rem;
-		height: 2.75rem;
+		width: 2.25rem;
+		height: 2.25rem;
 	}
 	main {
 		padding: 1rem;
