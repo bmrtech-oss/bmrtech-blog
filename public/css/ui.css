@@ -610,15 +610,92 @@ a[href].tag-pill:hover {
 	overflow: hidden;
 }
 
+/* Header search: collapsed to an icon circle on desktop, expands on focus */
+.header-search {
+	position: relative;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin-left: auto;
+}
+header a[href].social-link {
+	margin-left: 0;
+}
+.header-search input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	width: 2.25rem;
+	height: 2.25rem;
+	padding: 0;
+	font: 0.85rem var(--font-ui);
+	color: var(--text-color);
+	background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a94a6' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") no-repeat center / 1.1rem;
+	border: 1px solid var(--color-gray-50, var(--line));
+	border-radius: 999px;
+	cursor: pointer;
+	z-index: 5;
+	transition: width 0.2s ease, border-color 0.15s ease;
+}
+.header-search input::placeholder {
+	color: transparent;
+}
+.header-search input:focus {
+	width: 14rem;
+	padding: 0 0.9rem 0 2.2rem;
+	background-position: 0.65rem center;
+	cursor: text;
+	outline: none;
+	border-color: var(--accent);
+}
+.header-search input:focus::placeholder {
+	color: var(--text-muted, var(--color-gray-90));
+}
+
+/* Tablet: tighten header so the icons stay on the first row */
+@media (max-width: 900px) and (min-width: 641px) {
+	.home-link {
+		margin-right: 0.5rem;
+	}
+	.nav-item a[href] {
+		padding: 0.4rem 0.4rem;
+	}
+	header {
+		gap: 0.5rem 0.35rem;
+	}
+}
+
 /* Mobile polish */
 @media (max-width: 640px) {
+	.header-search {
+		order: 4;
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+	}
+	.header-search input,
+	.header-search input:focus {
+		position: static;
+		display: block;
+		width: 100%;
+		height: 2.5rem;
+		padding: 0 0.9rem 0 2.2rem;
+		background-position: 0.65rem center;
+		cursor: text;
+	}
+	.header-search input::placeholder {
+		color: var(--text-muted, var(--color-gray-90));
+	}
+	nav {
+		min-width: 0;
+	}
 	header {
 		gap: 0.5rem;
 	}
 	.home-link {
 		margin-right: auto;
 	}
-	a[href].social-link {
+	header a[href].social-link {
 		margin-left: 0;
 	}
 	nav {
