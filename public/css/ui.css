@@ -345,6 +345,25 @@ header {
 	margin: 2.25rem 0 0.75rem;
 }
 
+/* Self-hosted mono (DejaVu Sans Mono subset incl. box-drawing and arrows) so ASCII diagrams align on every device */
+@font-face {
+	font-family: "Blog Mono";
+	src: url("/fonts/mono.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+pre,
+code,
+pre[class*="language-"],
+code[class*="language-"] {
+	font-family: "Blog Mono", ui-monospace, Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	font-variant-ligatures: none;
+	font-synthesis: none;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
 /* Post cards */
 .cards {
 	list-style: none;
