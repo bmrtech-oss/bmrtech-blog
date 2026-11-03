@@ -3,7 +3,7 @@ title: "Did You Solve Your Problem, or Someone Else's? "
 description: What feels like thinking is usually pattern-matching. You only find
   out when the thing breaks. The problem you solved probably wasn't yours.
 date: 2026-11-03
-draft: true
+draft: false
 tags:
   - Principled Thinking
   - Systems Design
