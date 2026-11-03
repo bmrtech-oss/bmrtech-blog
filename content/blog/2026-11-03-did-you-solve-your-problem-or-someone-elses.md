@@ -103,6 +103,19 @@ Hamming's question was *what is the important problem?* Hickey's was *what are t
 
 The three questions I use now are a version of theirs.
 
+```
+┌───────────────┬───────────────┬───────────────┐
+│ 1. THE       │ 2. THE        │ 3. THE        │
+│    PROBLEM   │    PROOF      │    SIMPLEST   │
+│              │               │               │
+│ Yours. Not   │ Never false.  │ What is.      │
+│ the          │ Checked by    │ Not what      │
+│ pattern's.   │ something     │ feels like    │
+│              │ that doesn't  │ progress.     │
+│              │ trust you.    │               │
+└───────────────┴───────────────┴───────────────┘
+```
+
 **What is the actual problem?** Not the one the pattern solves. The one you have.
 
 **What would prove it's solved?** Not *it works*. A property that must never be false, checked by something that doesn't trust you.
@@ -125,7 +138,8 @@ That moment is the whole job. Everything else is typing.
 
 *This essay is part of a series on building software with judgment. The earlier posts are linked below — read in order, they build on each other.*
 
-1. [*Beyond AI Code Generation: Why Human Focus Is Still Everything*](https://antinodelabs.com/blog/2025-11-11-beyond-ai-code-generation-why-human-focus-is-still-everything/) — establishes that AI is brilliant at *easy* and blind to *simple*.
-2. [*Your AI Agent Made You Faster. So Why Are You Shipping Slower?*](https://antinodelabs.com/blog/2026-10-27-your-ai-agent-made-you-faster-so-why-are-you-shipping-slower/) — agents optimize locally while quality is global.
-3. [*Why Is More Context Making Your AI Agent Worse?*](https://antinodelabs.com/blog/2026-10-28-why-is-more-context-making-your-ai-agent-worse/) — context is avoidance; invariants are the answer.
-4. [*From Deterministic Component to Agentic System*](https://antinodelabs.com/blog/2026-10-17-from-deterministic-component-to-agentic-system/) — how far up the abstraction ladder you actually need to climb.
+1. *[Beyond AI Code Generation: Why Human Focus Is Still Everything](https://antinodelabs.com/blog/2025-11-11-beyond-ai-code-generation-why-human-focus-is-still-everything/)* — establishes that AI is brilliant at *easy* and blind to *simple*.
+2. *[Your AI Agent Made You Faster. So Why Are You Shipping Slower?](https://antinodelabs.com/blog/2026-10-27-your-ai-agent-made-you-faster-so-why-are-you-shipping-slower/)* — agents optimize locally while quality is global.
+3. *[Why Is More Context Making Your AI Agent Worse?](https://antinodelabs.com/blog/2026-10-28-why-is-more-context-making-your-ai-agent-worse/)* — context is avoidance; invariants are the answer.
+4. *[From Deterministic Component to Agentic System](https://antinodelabs.com/blog/2026-10-17-from-deterministic-component-to-agentic-system/)* — how far up the abstraction ladder you actually need to climb.
+
