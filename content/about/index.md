@@ -8,6 +8,8 @@ eleventyNavigation:
 ---
 # About Antinode Labs
 
+<p class="about-logo"><img src="/img/logo-emblem.png" alt="Antinode Labs emblem" width="375" height="280"></p>
+
 <p class="hero-lead">Essays on AI coding agents, software architecture and the craft of shipping, for engineers who care about what happens after the demo works.</p>
 
 ## Why "Antinode"?

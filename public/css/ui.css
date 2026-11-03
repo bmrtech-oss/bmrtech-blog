@@ -70,8 +70,16 @@ header {
 	padding: 0.75rem 1rem;
 }
 .home-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
 	font-size: 1.1rem;
 	letter-spacing: -0.01em;
+}
+.home-logo {
+	display: block;
+	width: 2.25rem;
+	height: auto;
 }
 .nav {
 	gap: 0.25rem;
@@ -315,6 +323,14 @@ header {
 	line-height: 1.55;
 	color: var(--text-muted, var(--color-gray-90));
 	margin: 0 0 1.25rem;
+}
+.about-logo {
+	margin: 0 0 1rem;
+}
+.about-logo img {
+	display: block;
+	width: 8.5rem;
+	height: auto;
 }
 .hero-note {
 	margin: -1rem 0 0;
@@ -834,6 +850,11 @@ html.search-open {
 	}
 	.home-link {
 		margin-right: auto;
+		gap: 0.35rem;
+		font-size: 1rem;
+	}
+	.home-logo {
+		width: 1.75rem;
 	}
 	header a[href].social-link {
 		margin-left: 0;
