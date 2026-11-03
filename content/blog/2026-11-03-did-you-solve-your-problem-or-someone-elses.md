@@ -105,14 +105,14 @@ The three questions I use now are a version of theirs.
 
 ```
 ┌───────────────┬───────────────┬───────────────┐
-│ 1. THE       │ 2. THE        │ 3. THE        │
-│    PROBLEM   │    PROOF      │    SIMPLEST   │
-│              │               │               │
-│ Yours. Not   │ Never false.  │ What is.      │
-│ the          │ Checked by    │ Not what      │
-│ pattern's.   │ something     │ feels like    │
-│              │ that doesn't  │ progress.     │
-│              │ trust you.    │               │
+│ 1. THE        │ 2. THE         │ 3. THE         │
+│    PROBLEM    │    PROOF       │    SIMPLEST    │
+│               │                │                │
+│ Yours. Not    │ Never false.   │ What is.       │
+│ the           │ Checked by     │ Not what       │
+│ pattern's.    │ something      │ feels like     │
+│               │ that doesn't   │ progress.      │
+│               │ trust you.     │                │
 └───────────────┴───────────────┴───────────────┘
 ```
 
