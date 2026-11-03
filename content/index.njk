@@ -17,7 +17,7 @@ numberOfLatestPostsToShow: 6
 {% set latest = collections.posts | head(-1 * numberOfLatestPostsToShow) | reverse %}
 <ul class="cards">
 {%- for post in latest %}
-	{%- set featured = loop.first %}
+	{%- set featured = loop.index <= 2 %}
 	{% include "postcard.njk" %}
 {%- endfor %}
 </ul>

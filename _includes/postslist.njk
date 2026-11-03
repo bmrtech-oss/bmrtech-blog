@@ -3,7 +3,13 @@
 {% for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL d, yyyy") }}</time>
+		{%- set itemTags = post.data.tags | filterTagList %}
+		{%- if itemTags.length %}
+		<span class="postlist-tags">
+			{%- for tag in itemTags | head(3) %}<a class="tag-pill" href="/tags/{{ tag | slugify }}/">{{ tag }}</a>{% endfor -%}
+		</span>
+		{%- endif %}
 		{%- if post.data.description %}<p class="postlist-description">{{ post.data.description | trim }}</p>{% endif %}
 	</li>
 {% endfor %}
