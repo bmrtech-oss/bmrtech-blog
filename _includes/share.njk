@@ -1,0 +1,11 @@
+{%- set shareUrl = page.url | htmlBaseUrl(metadata.url) | urlencode %}
+{%- set shareTitle = title | urlencode %}
+<div class="share" data-share-url="{{ page.url | htmlBaseUrl(metadata.url) }}" data-share-title="{{ title }}">
+	<span class="share-label">Share</span>
+	<a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ shareUrl }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+	<a class="share-link" href="https://twitter.com/intent/tweet?url={{ shareUrl }}&amp;text={{ shareTitle }}" target="_blank" rel="noopener noreferrer">X</a>
+	<a class="share-link" href="https://news.ycombinator.com/submitlink?u={{ shareUrl }}&amp;t={{ shareTitle }}" target="_blank" rel="noopener noreferrer">Hacker News</a>
+	<button type="button" class="share-link share-copy">Copy link</button>
+	<button type="button" class="share-link share-native" hidden>More…</button>
+</div>
+<script src="/js/share.js" defer></script>

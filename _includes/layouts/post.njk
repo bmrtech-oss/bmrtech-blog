@@ -36,6 +36,8 @@ layout: layouts/base.njk
 	{{ content | safe }}
 </div>
 
+{% include "share.njk" %}
+
 {% set signupId = "post" %}
 {% include "signup.njk" %}
 

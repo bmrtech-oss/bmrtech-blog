@@ -482,6 +482,44 @@ a[href].tag-pill:hover {
 	border-bottom: 1px solid var(--line);
 }
 
+/* Share links */
+.share {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 2rem 0 0;
+	padding-top: 1rem;
+	border-top: 1px solid var(--line);
+	font-family: var(--font-ui);
+}
+.share[hidden],
+.share [hidden] {
+	display: none;
+}
+.share-label {
+	font-size: 0.8rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-muted, var(--color-gray-90));
+}
+.share a.share-link,
+.share button.share-link {
+	padding: 0.2rem 0.75rem;
+	font: 0.85rem var(--font-ui);
+	text-decoration: none;
+	color: var(--text-color);
+	background: var(--background-color);
+	border: 1px solid var(--line);
+	border-radius: 999px;
+	cursor: pointer;
+}
+.share a.share-link:hover,
+.share button.share-link:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}
+
 /* Newsletter signup */
 .signup {
 	margin: 2rem 0;
