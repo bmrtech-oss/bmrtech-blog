@@ -1,53 +1,45 @@
 ---
 layout: layouts/base.njk
+title: About
+description: Antinode Labs publishes essays on AI coding agents, software architecture and the craft of shipping. Engineering beyond peak.
 eleventyNavigation:
   key: About Us
   order: 4
 ---
-# **About Antinode Labs**
+# About Antinode Labs
 
-## **Engineering Beyond Peak.**
+<p class="hero-lead">Essays on AI coding agents, software architecture and the craft of shipping, for engineers who care about what happens after the demo works.</p>
 
-Most companies stop at peak performance. We engineer what comes after.
+## Why "Antinode"?
 
-We build software that doesn't just reach maximum amplitude; we create entirely new waveforms.
+In a standing wave, an **antinode** is the point of maximum amplitude: the peak. Most of our industry optimizes toward peaks: peak speed, peak output, peak scale.
 
-## **Our Story**
+We're interested in what comes after. AI agents can now generate code faster than any team can review it. Systems reach their first peak, then slowly become hard to change, hard to trust and hard to explain. **Engineering beyond peak** means building things that stay understandable, maintainable and useful once the initial rush is over.
 
-### **The Problem with Peaks**
+## What we write about
 
-In physics, an **antinode** represents a point of maximum amplitude in a standing wave—the peak. Most technology companies optimize toward these peaks: maximum speed, maximum efficiency, maximum scale.
+- **AI coding and agents:** what works, what quietly breaks, and how to keep humans in control of the system. Start with [The Five Levels of AI Coding Agents](/blog/2026-03-24-the-five-levels-of-ai-coding-agents-a-practical-rating/).
+- **Software architecture:** decisions, trade-offs and the structure that keeps a codebase healthy as it grows.
+- **Engineering leadership and culture:** shipping, scope, stakeholders and the habits that make teams finish what they start.
+- **Career and craft:** lessons learned the hard way, including the mistakes, which we write about openly.
 
-But what happens after you reach the peak?
+Browse everything by topic on the [tags page](/tags/), or see every essay in the [archive](/blog/).
 
-Traditional thinking says you've arrived. We believe you've just found the **starting line**.
+## How we think about engineering
 
-### **Our Genesis**
+- **Peaks are starting lines.** Reaching maximum output isn't the finish. It's where the real engineering begins.
+- **Understanding beats speed.** Code nobody can read is a liability, no matter how fast it was produced.
+- **Process is part of the product.** Most "AI problems" turn out to be delivery-process problems.
+- **Write down the why.** Decisions, specs and trade-offs outlive the people who made them.
 
-Antinode Labs was founded in 2023 by a team of physicists, engineers, and data scientists who kept encountering the same limitation: every system has theoretical maximums, but real-world problems don't respect theoretical boundaries.
+## New here?
 
-While working on distributed systems, we repeatedly hit performance ceilings—not because of hardware limitations, but because our software was built to *approach* peaks, not *transcend* them.
+Read the [essential posts](/start-here/) for the clearest picture of how we think, or search the site with the magnifier in the header (or press <kbd>/</kbd>).
 
-So we asked a different question:
+## Stay in touch
 
-**What if peak performance wasn't an endpoint, but a launchpad?**
-
-## **Our Philosophy**
-
-### **The Beyond-Peak Principle**
-
-- Identify the Peak: Where current systems reach maximum amplitude
-- Engineer Through: Build new architectures that treat peaks as transitions
-- Create New Waveforms: Generate performance curves that redefine what's possible
-
-### **Our Core Beliefs:**
-
-- **Peaks Are Starting Lines** – Maximum amplitude is where real innovation begins
-- **Systems Create Their Own Physics** – Well-engineered software bends performance curves
-- **Resonance Over Optimization** – We build systems that amplify each other, not just run faster
-- **The Next Peak Is Always Visible** – If you're looking from the right amplitude
-
----
-
-FollowUs@x.com: [https://x.com/antinoders](https://x.com/antinoders)
+- **Newsletter:** new essays by email, no spam, unsubscribe anytime. Sign up on the [home page](/).
+- **RSS:** subscribe with the [feed](/feed/feed.xml).
+- **X:** [@antinoders](https://x.com/antinoders)
+- **Email:** [info@antinodelabs.com](mailto:info@antinodelabs.com)
 
