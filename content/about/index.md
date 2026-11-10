@@ -4,7 +4,7 @@ title: About
 description: Antinode Labs publishes essays on AI coding agents, software architecture and the craft of shipping. Engineering beyond peak.
 eleventyNavigation:
   key: About Us
-  order: 4
+  order: 5
 ---
 # About Antinode Labs
 
@@ -26,6 +26,8 @@ We're interested in what comes after. AI agents can now generate code faster tha
 - **Career and craft:** lessons learned the hard way, including the mistakes, which we write about openly.
 
 Browse everything by topic on the [tags page](/tags/), or see every essay in the [archive](/blog/).
+
+I also write books. Explore [Books](/books/) to read *From Noise to Knowing* and find future titles.
 
 ## How we think about engineering
 

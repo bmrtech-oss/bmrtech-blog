@@ -178,6 +178,7 @@ pre {
 	white-space: pre;
 	word-break: normal;
 	overflow-wrap: normal;
+	font-size: 0.9em;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
@@ -189,7 +190,7 @@ pre code {
 @media (max-width: 600px) {
 	pre:not([class*="language-"]),
 	pre[class*="language-"] {
-		font-size: 0.72rem;
+		font-size: 0.8em;
 		line-height: 1.3;
 	}
 }
