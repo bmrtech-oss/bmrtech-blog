@@ -18,4 +18,4 @@ How do we turn the flood of information around us into knowledge we can trust an
 
 [Read the book online](https://bmrtech-oss.github.io/antinode-research/).
 
-[Download the PDF (3.1 MB)](https://bmrtech-oss.github.io/antinode-research/FromNoiseToKnowing.pdf).
+[Download the PDF (3.1 MB)](/books/from-noise-to-knowing.pdf).
