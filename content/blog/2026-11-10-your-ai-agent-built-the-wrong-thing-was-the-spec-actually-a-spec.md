@@ -3,7 +3,7 @@ title: Your AI Agent Built the Wrong Thing. Was the Spec Actually a Spec?
 description: A prompt is a request. A spec is a contract. The difference is
   whether it can be verified — and most "specs" can't be.
 date: 2026-11-10
-draft: false
+draft: true
 tags:
   - AI Agents
   - Software Architecture
@@ -142,12 +142,12 @@ Here is what all seven look like for one feature — refunds.
  - Naming: docs/glossary.md (use "refund", never "reversal")
 
  LAYER 6 — FAILURE & EDGE MATRIX
- | Condition                      | Expected behaviour              |
+| Condition | Expected behaviour |
  |--------------------------------|---------------------------------|
- | Duplicate idempotency key      | Return original, 200            |
- | Ledger timeout                 | Retry 3x + backoff, then FAILED |
- | Partial write (row yes, event) | Outbox pattern, reconcile job   |
- | Concurrent refunds, same txn   | Serialise, second gets 409      |
+| Duplicate idempotency key | Return original, 200 |
+| Ledger timeout | Retry 3x + backoff, then FAILED |
+| Partial write (row yes, event) | Outbox pattern, reconcile job |
+| Concurrent refunds, same txn | Serialise, second gets 409 |
 ═══════════════════════════════════════════════════════════════════════
 ```
 
