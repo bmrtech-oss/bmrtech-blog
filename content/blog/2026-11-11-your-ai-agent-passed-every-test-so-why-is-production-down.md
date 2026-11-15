@@ -2,8 +2,8 @@
 title: Your AI Agent Passed Every Test. So Why Is Production Down?
 description: A spec constrains one unit of work. It doesn't constrain the system
   that unit lands in. That's what guardrails are for.
-date: 2026-11-11
-draft: true
+date: 2026-11-15
+draft: false
 tags:
   - AI Agents
   - Software Architecture
@@ -221,11 +221,13 @@ The mistake most teams make is applying one process to every change. A copy edit
 
 Tier the change by blast radius.
 
+
 | Risk | Examples | Required guardrails |
-|---|---|---|
+| ---------- | --------------------------------- | ---------------------------------------------------------------------------- |
 | **Low** | UI copy, flags, docs | Automated gates only |
 | **Medium** | Service logic, non-critical APIs | Canary, automated rollback, on-call aware |
 | **High** | Auth, payments, migrations, infra | Human go/no-go, signed change record, staged rollout, explicit rollback plan |
+
 
 The signature at the high tier is the point. It converts a model output into an accountable decision. And — as we covered in the decision-layer argument — that signature has a shelf life. A signed threshold is valid for one model version and one data distribution. Retrain, and the signature is void. If the sign-off doesn't survive the next retrain, it isn't governance. It's theater.
 
