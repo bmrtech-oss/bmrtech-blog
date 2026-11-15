@@ -2,7 +2,7 @@
 title: Your AI Agent Built the Wrong Thing. Was the Spec Actually a Spec?
 description: A prompt is a request. A spec is a contract. The difference is
   whether it can be verified — and most "specs" can't be.
-date: 2026-11-10
+date: 2026-11-15
 draft: false
 tags:
   - AI Agents
