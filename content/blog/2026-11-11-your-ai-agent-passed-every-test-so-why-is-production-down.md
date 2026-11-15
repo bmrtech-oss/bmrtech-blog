@@ -3,7 +3,7 @@ title: Your AI Agent Passed Every Test. So Why Is Production Down?
 description: A spec constrains one unit of work. It doesn't constrain the system
   that unit lands in. That's what guardrails are for.
 date: 2026-11-15
-draft: false
+draft: true
 tags:
   - AI Agents
   - Software Architecture
